@@ -190,3 +190,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+/* Tell It For Me Page */
+.tell-it-content-wrapper {
+    background-color: pink;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
