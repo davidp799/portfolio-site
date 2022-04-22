@@ -199,13 +199,27 @@ img {
     background-color: #81b29a;
     display: grid;
     place-items: center;
-    height: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    height: 80vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
     overflow: hidden;
 }
 .tell-it-header {
     text-align: center;
     color: #3d405b;
     padding: 3px;
+}
+.tell-it-subtext {
+    color: #f2cc8f;
+}
+.tell-it-form {
+    width: auto;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 3vw;
+    background-color: darksalmon;
+    color: white;
 }
