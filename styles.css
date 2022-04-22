@@ -193,10 +193,11 @@ img {
 
 /* Tell It For Me Page */
 .tell-it-page-wrapper {
-    background-color: #f4f1de;
+    background-color: #e7e9eb;
+    display: inline-block;
 }
 .tell-it-content-wrapper {
-    background-color: #81b29a;
+    background-color: #282A35;
     display: grid;
     place-items: center;
     height: 80vh;
@@ -206,20 +207,46 @@ img {
 }
 .tell-it-header {
     text-align: center;
-    color: #3d405b;
+    color: white;
     padding: 3px;
 }
 .tell-it-subtext {
-    color: #f2cc8f;
+    color: #ffc0c7;
 }
 .tell-it-form {
+    background-color: #e7e9eb;
     width: auto;
+    border-radius: 8px;
+}
+
+/* Input Styling */
+input[type=text] {
+    padding:5px; 
+    border:2px solid #ccc; 
+    border-radius: 4px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    background:#fff080; 
+    border:0 none;
+    cursor:pointer;
+    border-radius: 4px; 
 }
 
 /* Footer Styling */
 footer {
-    text-align: center;
-    padding: 3vw;
-    background-color: darksalmon;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #282a35;
     color: white;
+
+    text-align: center;
+
 }
