@@ -16,6 +16,11 @@ body {
     justify-content: space-between;
     padding: 38px;
 }
+.nav-divider {
+    display: flex;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
 
 .left-side {
     display: flex;
@@ -27,7 +32,15 @@ body {
     text-transform: uppercase;
 }
 
+.nav-wrapper > .middle-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
 .nav-link-wrapper {
+    position: relative;
+    float: left;
     height: 22px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
@@ -52,55 +65,6 @@ body {
 }
 .active-nav-link a{
     color: black !important;
-}
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-.dropdown .dropbtn {
-    height: inherit;
-    border-bottom: inherit;
-    transition: border-bottom 0.5s;
-    font-size: inherit;
-    text-transform: inherit;
-    border: inherit;
-    outline: inherit;
-    color: #8a8a8a;
-    background-color: inherit;
-    font-family: inherit;
-
-}
-.dropdown:hover {
-    border-bottom: 1px solid black;
-}
-
-.dropdown a:hover {
-    color: black;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-} 
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-  
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
 }
 
 /* Portfolio styles */
@@ -193,7 +157,7 @@ img {
 
 /* Tell It For Me Page */
 .tell-it-page-wrapper {
-    background-color: #e7e9eb;
+    background-color: #282A35;
     display: inline-block;
 }
 .tell-it-content-wrapper {
@@ -214,9 +178,10 @@ img {
     color: #ffc0c7;
 }
 .tell-it-form {
+    padding: 15px 15px;
     background-color: #e7e9eb;
     width: auto;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 /* Input Styling */
@@ -240,13 +205,11 @@ input[type=submit] {
 
 /* Footer Styling */
 footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
-
-    background-color: #282a35;
-    color: white;
-
+    height: auto;
+    background-color: #d9eee1;
+    color: black;
     text-align: center;
+    display: inline-block;
 
 }
