@@ -14,7 +14,7 @@ body {
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 38px;
+    padding: 26px;
 }
 .nav-divider {
     display: flex;
@@ -121,38 +121,47 @@ body {
 }
 
 /* Contact page */
-.two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
+.contact-page-wrapper {
+    background-color: #282A35;
+    height: 80vh;
 
+}
+.contact-two-column-wrapper {
+    display: flex;
+}
 .profile-image-wrapper img {
-    display: inline-block;
     width: 300px;
     height: 300px;
-    border-radius: 50%;
-
     object-fit: cover;
-}
 
+}
 .profile-content-wrapper {
+    height: 80vh;
     padding: 30px;
+    flex: 50%;
+    background-color: #f3ecea;
 }
-
-.profile-content-wrapper h1 {
-    color: lightseagreen;
+.profile-header {
+    color: black
 }
-
+.profile-subtext {
+    color: black
+}
+.profile-links {
+    color: black;
+}
+profile-body {
+    background-color: #eceaf3;
+}
+.padded-image {
+    padding: 60px;
+}
 img {
     width:100%;
     max-width: 750px;
-    padding: 60px;
-}
+    border: 4px solid #eceaf3;
+    border-radius: 50%;
 
-/* Projects Page */
-.three-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* Tell It For Me Page */
