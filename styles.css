@@ -6,6 +6,8 @@ body {
 }
 
 .container {
+    position: relative;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -21,23 +23,19 @@ body {
     padding-left: 1vw;
     padding-right: 1vw;
 }
-
 .left-side {
     display: flex;
 }
-
 .nav-wrapper > .left-side > div {
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
 }
-
 .nav-wrapper > .middle-side > div {
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
 }
-
 .nav-link-wrapper {
     position: relative;
     float: left;
@@ -45,13 +43,11 @@ body {
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
-
 .nav-link-wrapper a {
     color: #8a8a8a;
     text-decoration: none;
     transition: color 0.5s;
 }
-
 .nav-link-wrapper:hover {
     border-bottom: 1px solid black;
 }
@@ -59,7 +55,6 @@ body {
 .nav-link-wrapper a:hover {
     color: black;
 }
-
 .active-nav-link {
     border-bottom: 1px solid black;
 }
@@ -74,11 +69,9 @@ body {
     height: 80vh;
     background-color: #282A35;
 }
-
 .portfolio-item-wrapper {
     position: relative;
 }
-
 .portfolio-img-background {
     height: 100%;
     width: 100%;
@@ -87,7 +80,6 @@ body {
     background-repeat: no-repeat;
     filter: brightness(70%);
 }
-
 .img-text-wrapper {
     position: absolute;
     top: 0;
@@ -100,23 +92,19 @@ body {
     padding-left: 100px;
     padding-right: 100px;
 }
-
 .logo-wrapper img {
     width: 50%;
     margin-bottom: 20px;
 }
-
 .img-text-wrapper .subtitle {
     transition: 1s;
     font-weight: 600;
     color: transparent;
 }
-
 .img-text-wrapper:hover .subtitle {
     font-weight: 600;
     color: #FFC0C7;
 }
-
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
@@ -126,7 +114,7 @@ body {
 .contact-page-wrapper {
     background-color: #282A35;
     height: 80vh;
-
+    padding-bottom: 8vh;   
 }
 .contact-two-column-wrapper {
     display: flex;
@@ -135,7 +123,6 @@ body {
     width: 300px;
     height: 300px;
     object-fit: cover;
-
 }
 .profile-content-wrapper {
     height: 80vh;
@@ -155,15 +142,12 @@ body {
 profile-body {
     background-color: #eceaf3;
 }
-.padded-image {
+.contact-padded-image {
     padding: 60px;
 }
-img {
-    width:100%;
-    max-width: 750px;
+.contact-padded-image img {
     border: 4px solid #eceaf3;
     border-radius: 50%;
-
 }
 
 /* Find It Rentals Page */
@@ -171,27 +155,78 @@ img {
     position: relative;
     height: 80vh;
     font-size: 25px;
-
     background: url(images/construction.jpg);
     background-position: center;
     background-size: cover;
+    padding-bottom: 8vh;   
 }
 
-/* Patco Today Page */
+/* Patco Today page */
 .patco-page-wrapper {
+    background-color: #282A35;
+    height: 80vh;
+    padding-bottom: 8vh;   
+}
+.patco-two-column-wrapper {
+    display: flex;
+}
+.patco-logo-wrapper img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.patco-header-wrapper {
+    height: 80vh;
+    padding: 30px;
+    flex: 50%;
+    background-color: #f3ecea;
+}
+.patco-header {
+    color: black
+}
+.patco-links {
+    color: black;
+}
+.patco-body {
+    background-color: #eceaf3;
+}
+.patco-padded-image {
+    padding: 60px;
+}
+.patco-padded-image img {
+    border: 4px solid #eceaf3;
+    border-radius: 50%;
+}
+patco-body {
+    background-color: #eceaf3;
+}
+.screenshot-column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.screenshot-row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Find It Rentals Page */
+.find-it-page-wrapper {
     position: relative;
     height: 80vh;
     font-size: 25px;
-
     background: url(images/construction.jpg);
     background-position: center;
     background-size: cover;
+    padding-bottom: 8vh;   
 }
 
 /* Tell It For Me Page */
 .tell-it-page-wrapper {
     background-color: #282A35;
     display: inline-block;
+    padding-bottom: 8vh;   
 }
 .tell-it-content-wrapper {
     background-color: #282A35;
@@ -243,12 +278,13 @@ input[type=submit] {
 
 /* Footer Styling */
 footer {
+    position: absolute;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
     width: 100%;
-    height: 10vh;
-    background-color: #d9eee1;
-    color: black;
+    height: 8vh;
+    background: #d9eee1;
     text-align: center;
-    display: inline-block;
 }
 .footer-divider {
     display: flex;
