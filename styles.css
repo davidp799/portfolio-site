@@ -1,5 +1,4 @@
 /* Master styles */
-
 body {
     font-family: "Raleway", sans-serif;
     margin: 0px;
@@ -113,7 +112,7 @@ body {
 /* Contact page */
 .contact-page-wrapper {
     background-color: #282A35;
-    height: 80vh;
+    min-height: 80vh;
     padding-bottom: 8vh;   
 }
 .contact-two-column-wrapper {
@@ -125,7 +124,7 @@ body {
     object-fit: cover;
 }
 .profile-content-wrapper {
-    height: 80vh;
+    min-height: 80vh;
     padding: 30px;
     flex: 50%;
     background-color: #f3ecea;
@@ -232,7 +231,7 @@ patco-body {
     background-color: #282A35;
     display: grid;
     place-items: center;
-    height: 80vh;
+    min-height: 80vh;
     margin-left: 5vw;
     margin-right: 5vw;
     overflow: hidden;
@@ -255,6 +254,22 @@ patco-body {
     background-color: #e7e9eb;
     width: auto;
     border-radius: 4px;
+}
+.tell-it-output {
+    padding: 15px 15px;
+    background-color: #e7e9eb;
+    width: auto;
+    border-radius: 4px;
+}
+.output-column {
+    float: left;
+    width: 16.667%;
+    padding: 3ch;
+}
+.output-row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* Input Styling */
