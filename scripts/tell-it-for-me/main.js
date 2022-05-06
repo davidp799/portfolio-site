@@ -35,4 +35,5 @@ myStory.onclick = function() {
 	// set images to terms
 	openSearch(terms);
 	
+	return false;
 }
