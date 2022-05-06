@@ -20,7 +20,6 @@ myStory.onclick = function() {
 	image1.setAttribute("src", "images/icons/tomato.png")
 
 	// set story title
-	//theTitle.textContent = ("A Story About " + noun1 + ", " + noun2 + ", and " + noun3 + " at " + place + "!");
-	theTitle.textContent = image1.getAttribute("src");
+	theTitle.textContent = ("A Story About " + noun1 + ", " + noun2 + ", and " + noun3 + " at " + place + "!");
 }
 
