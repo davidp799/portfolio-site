@@ -10,7 +10,7 @@ async function openSearch(terms){
 	for (let i=0; i<terms.length; i++) {
 		myWindow = window.open("https://www.google.com/search?tbm=isch&as_q=" + terms[i] + "&tbs=isz:lt,islt:4mp,sur:fmc", 
 		"_blank", "toolbar=no,scrollbars=no,resizable=no,top=700,left=700,width=700,height=700");
-		await delay(4);
+		await delay(3);
 		myWindow.close();
 	}
 }
