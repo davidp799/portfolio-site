@@ -255,22 +255,6 @@ patco-body {
     width: auto;
     border-radius: 4px;
 }
-.tell-it-output {
-    padding: 15px 15px;
-    background-color: #e7e9eb;
-    width: auto;
-    border-radius: 4px;
-}
-.output-column {
-    float: left;
-    width: 16.667%;
-    padding: 3ch;
-}
-.output-row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 /* Input Styling */
 input[type=text] {
