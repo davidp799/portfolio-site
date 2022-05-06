@@ -45,44 +45,69 @@
 
     <div class="tell-it-page-wrapper">
       <div class="tell-it-content-wrapper">
-        <div class="tell-it-header">
+        <div class="tell-it-header" id="tell-it-header">
           <h1>Tell It For Me</h1>
-          <div class="tell-it-subtext">
+          <div class="tell-it-subtext" id="tell-it-subtext">
             <p>Generate cool storyboards based on your story!</p> 
           </div>
         </div>
         
-        <div class="tell-it-form">
-          <form action = "/scripts/tell-it-for-me/randomWords.py" method = "get">
-            Enter input text here:
-            <br>
-            <textarea rows = "12" cols = "80" name = "description"
-            placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
-            </textarea><br>
+        <div class="tell-it-form" style="display: flex;">
+          
+          <form action="/action_page.php">
+
+            <div style="float:left;">
+              <label for="noun1">NOUN:</label><br>
+              <input type="text" id="noun1" name="noun" value=""><br>
+            </div>  
+            <div style="float:left;">
+              <label for="noun1Plural">NOUN (PLURAL):</label><br>
+              <input type="text" id="noun1Plural" name="noun1Plural" value=""><br>  
+            </div>
+            <div style="float:left;">
+              <label for="noun2">NOUN:</label><br>
+              <input type="text" id="noun2" name="noun2" value=""><br>  
+            </div>
+
+            <div style="clear:both;">&nbsp;</div>
+
+            <div style="float:left;">
+              <label for="place">PLACE:</label><br>
+              <input type="text" id="place" name="place" value=""><br>  
+            </div>
+            <div style="float:left;">
+              <label for="adjective">ADJECTIVE:</label><br>
+              <input type="text" id="adjective" name="adjective" value=""><br>  
+            </div>
+            <div style="float:left;">
+              <label for="noun3">NOUN</label><br>
+              <input type="text" id="noun3" name="noun3" value=""><br>
+            </div>
+
+            <div style="clear:both;">&nbsp;</div>
             <input id = "storySubmit" type = "submit" value = "Tell It For Me!" />
-          </form>
+          </form> 
         </div>
 
-        <div class="tell-it-subtext">
+        <div class="tell-it-subtext" id="tell-it-title">
           <h2>Your Story!</h2>
         </div>
 
         <div class="tell-it-output">
-          <div class="output-row">
-            <div class="output-column">
-              <img src="images/icons/blank.png" style="height:20vh" >
-            </div>
-            <div class="output-column">
-              <img src="images/icons/blank.png" style="height:20vh">
-            </div>
-            <div class="output-column">
-              <img src="images/icons/blank.png" style="height:20vh">
-            </div>
-            <div class="output-column">
-              <img src="images/icons/blank.png" style="height:20vh">
-            </div>         
-          </div> 
+          <div style="float:left;">
+            <img id="image1" src="images/icons/blank.png" style="height:20vh" >
+          </div>
+          <div style="float:left;">
+            <img id="image2" src="images/icons/blank.png" style="height:20vh">
+          </div>
+          <div style="float:left;">
+            <img id="image3" src="images/icons/blank.png" style="height:20vh">
+          </div>
+          <div style="float:left;">
+            <img id="image4" src="images/icons/blank.png" style="height:20vh">
+          </div>         
         </div>
+
       </div>
     </div>
   </div>
