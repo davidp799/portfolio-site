@@ -249,6 +249,12 @@ patco-body {
     margin-top:30px!important;
     font-size:23px;
 }
+.tell-it-popups {
+    color:#FFC0C7;
+    font-weight:700;
+    margin-top:30px!important;
+    font-size:23px;
+}
 .tell-it-form {
     padding: 15px 15px;
     background-color: #e7e9eb;

@@ -30,8 +30,8 @@ myStory.onclick = function() {
 	const terms = [noun1, noun2, adjective1, verb1, adjective2, place];
 	
 	// set story title
-	theSubtext.textContent = ("A Story About " + noun1 + ", and " + noun2 + ", " + adjective1 + " " + verb1 + " in " + adjective2 + " " + place + "!");
-
+	theSubtext.textContent = ("A Story About " + noun1 + ", and " + noun2 + ", " 
+			+ adjective1 + " " + verb1 + " in " + adjective2 + " " + place + "!");
 	// set images to terms
 	openSearch(terms);
 	
