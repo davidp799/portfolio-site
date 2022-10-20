@@ -1,110 +1,264 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
-    <title>David Pape Jr</title>
-    
-</head>
-<body>
-    <div class="container">
-      <div class="nav-wrapper">
-        <div class="left-side">
-          <div class="nav-link-wrapper active-nav-link">
-            <a href="index.html">Home</a>
-          </div>
-          
-          <div class="nav-link-wrapper">
-            <a href="contact.html">Contact</a>
-          </div>
-  
-          <div class="nav-divider">
-            <a>|</a>
-          </div>
-  
-          <div class="nav-link-wrapper">
-            <a href="find-it-rentals.html">FindIt Rentals</a>
-          </div>
-          
-          <div class="nav-link-wrapper">
-            <a href="patco-today.html">Patco Today</a>
-          </div>
-  
-          <div class="nav-link-wrapper">
-            <a href="tell-it-for-me.html">Tell It For Me</a>
-          </div>
+  <head>
+    <title>Subuthai's Very Simple Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        </div>
-  
-        <div class="right-side">
-          <div class="brand">
-            <div>DAVID PAPE JR</div>
-          </div>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/superslides.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="slides">
+      <div class="overlay"></div>
+      <div class="slides-container">
+        <img src="images/patco-today/feature.png" alt="" />
+      </div>
+      <div class="titleMessage">
+        <div class="heading">
+          <p class="main">David Pape Jr | B.S. Computer Science</p>
+          <p class="sub typed"></p>
         </div>
       </div>
-      
-      <div class="content-wrapper">
-        <div class="portfolio-items-wrapper">
-  
-          <div class="portfolio-item-wrapper">
-            <div class="portfolio-img-background" style="background-image:url(images/logos/find-it/ic_background.jpg)"></div>
-  
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/find-it/ic_foreground.png" alt="">
-              </div>
-  
-              <div class="subtitle">
-                <p>FindIt Rentals</p>
-                <p>Making rental searches easier.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div class="portfolio-item-wrapper">
-            <div class="portfolio-img-background" style="background-image:url(images/logos/patco-today/ic_background.jpg)"></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/patco-today/ic_foreground.png" alt="">
-              </div>
-  
-              <div class="subtitle">
-                <p>Patco Today</p>
-                <p>Let's get there together.</p>
-              </div>
-            </div>
-          </div>
-  
-          <div class="portfolio-item-wrapper">
-            <div class="portfolio-img-background" style="background-image:url(images/logos/tell-me/ic_background.jpg)"></div>
-            <div class="img-text-wrapper">
-              <div class="logo-wrapper">
-                <img src="images/logos/tell-me/ic_foreground.png" alt="">
-              </div>
-  
-              <div class="subtitle">
-                <p>Tell It For Me</p>
-                <p>Generate a story from pop-ups.</p>
-              </div>
-          </div>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Navbar -->
+    <nav id="navigation" class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="#">DAVID PAPE JR</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              >HOME<span class="sr-only"></span
+            ></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT</a>
+          </li>
+          <div class="nav-item">
+            <a class="nav-link">|</a>
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="#patcoToday">PATCO TODAY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tellItForMe">TELL IT FOR ME</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home / About Me -->
+    <div id="home" class="section">
+      <div class="home-page-wrapper">
+        <div class="home-two-column-wrapper">
+          <div class="profile-image-wrapper">
+            <div class="home-padded-image">
+              <img src="images/profile.jpg">
+            </div>
+          </div>
+          <div class="profile-content-wrapper">
+            <div class="profile-header">
+              <h1>B.S. Degree in Computer Science</h1>
+              <div class="profile-subtext">
+                <p>Rutgers University</p> 
+                <p>drp155 [at] rutgers [dot] edu</p>
+              </div>
+              <div class="profile-links">
+                <a href="https://github.com/davidp799">[ GitHub ]</a> 
+                <a href="https://www.linkedin.com/in/david-pape-jr/">[ LinkedIn ]</a>
+              </div>
+            </div>
+            <div class="profile-body">
+              <h3>Hi there!</h3>
+              <p>I am a graduating undergraduate student at Rutgers University with an interest in solving real-world and societal problems through the application of data analysis and computer science.</p>
+              <p>I am particularly passionate home the local impact of technology especially within the context of our urban environment and public infrastructure.</p> 
+              <p>Aside from my academic work, I spend my time practicing music, working on DIY projects, and developing applications for Android.</p> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- patcoToday -->
+    <div id="patcoToday" class="patcoTodaySection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>MY patcoToday</h2>
+            <p>My patcoToday in web & programming languages.</p>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <div class="skill">
+              <span class="chart" data-percent="85">
+                <span class="percent">85</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>HTML</h4>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="60">
+                <span class="percent">60</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>CSS</h4>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="80">
+                <span class="percent">80</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>Javascript</h4>
+            </div>
+
+            <div class="skill">
+              <span class="chart" data-percent="45">
+                <span class="percent">45</span>
+                <canvas height="152" width="152"></canvas>
+              </span>
+              <h4>C#</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tellItForMe -->
+    <div id="tellItForMe" class="tellItForMeSection section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-globe"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">59</h2>
+                  <h3>Projects Done</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-address-book"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">14</h2>
+                  <h3>Clients</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fa fa-coffee"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">999999</h2>
+                  <h3>Cups Of Coffee</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="squareItem">
+              <div class="squareInnerContainer">
+                <div class="squareIcon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <div class="squareContent">
+                  <h2 class="counter">3</h2>
+                  <h3>Discord Bots I Made</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contactSection section">
+      <div class="col-md-12 text-center">
+        <p class="subHeading">Do you want to contact me?</p>
+        <h2>Send an email now.</h2>
+        <a href="mailTo:contact@subuthai.xyz" class="contactButton"
+          >Contact me!</a
+        >
+      </div>
+    </div>
+
+    <!-- Copyright -->
+
+    <div class="copyrightSection">
+      <div class="col-md-12 text-center">
+        <p>
+          copyright &copy; 2021 some rights reserved | 85% of website was made
+          by subuthai
+        </p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.2/countUp.min.js"></script>
+    <script src="js/countUp-jquery.js"></script>
+    <script src="js/jquery.superslides.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/typed.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
-<script>
-  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
-
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      portfolioItem.childNodes[1].classList.add('img-darken');
-    })
-    portfolioItem.addEventListener('mouseout', () => {
-      portfolioItem.childNodes[1].classList.remove('img-darken');
-    })
-  })
-</script>
-
 </html>
