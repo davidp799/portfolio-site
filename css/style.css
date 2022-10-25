@@ -100,7 +100,7 @@ profile-body {
   height: 80vh;
   padding: 30px;
   flex: 50%;
-  background-color: #f3ecea;
+  background-color: #e29B90;
 }
 .patco-header {
   color: black
@@ -114,11 +114,7 @@ profile-body {
 .patco-padded-image {
   padding: 60px;
 }
-.patco-padded-image img {
-  border: 4px solid #eceaf3;
-  border-radius: 50%;
-}
-patco-body {
+.patco-body {
   background-color: #eceaf3;
 }
 .screenshot-column {
