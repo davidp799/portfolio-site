@@ -45,7 +45,7 @@ body {
 .section {
   background-color: #282A35;
   color: rgb(151, 150, 150);
-  padding: 100px 0;
+  padding: 36px 0;
 }
 
 /* Home / About Page */
@@ -88,26 +88,55 @@ profile-body {
 }
 
 /* Patco Today Page */
-.patcoTodaySection {
-  background: linear-gradient(
-    270deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(15, 124, 5, 1) 0%,
-    rgba(0, 90, 143, 1) 100%
-  );
-  color: #fff;
+.patco-two-column-wrapper {
+  display: flex;
+}
+.patco-logo-wrapper img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.patco-header-wrapper {
+  height: 80vh;
+  padding: 30px;
+  flex: 50%;
+  background-color: #f3ecea;
+}
+.patco-header {
+  color: black
+}
+.patco-links {
+  color: black;
+}
+.patco-screenshots-wrapper {
+  background-color: #eceaf3;
+}
+.patco-padded-image {
+  padding: 60px;
+}
+.patco-padded-image img {
+  border: 4px solid #eceaf3;
+  border-radius: 50%;
+}
+patco-body {
+  background-color: #eceaf3;
+}
+.screenshot-column {
+  float: left;
+  padding: 5px;
+}
+.screenshot-row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
+
+
+
+/* other??? */
 .contactSection {
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(15, 124, 5, 1) 0%,
-    rgba(0, 90, 143, 1) 100%
-  );
-  color: #fff;
+  background-color: #eceaf3;
 }
 
 .skill {
@@ -200,27 +229,21 @@ profile-body {
   color: #444;
 }
 
-.contactButton {
-  color: #fff;
-  padding: 15px 20px;
-  display: inline-block;
-  margin-top: 20px;
-  border: 1px solid #fff;
-  border-radius: 2px;
+.contact-padded-image {
+  padding: 60px;
 }
 
-.contactButton:hover {
-  text-decoration: none;
-  color: #ffff;
-  background: linear-gradient(
-    270deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 0%,
-    rgba(19, 146, 7, 1) 0%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  opacity: 0.7;
-  transition: 0.3s;
+.contact-padded-image img {
+  border: 4px solid #eceaf3;
+  border-radius: 50%;
+}
+
+i.fa-brands {
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0 0 2px #888;
+  padding: 0.5em 0.6em;
+
 }
 
 .filter a {

@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Subuthai's Very Simple Portfolio</title>
+    <script src="https://kit.fontawesome.com/6c4b5d8779.js" crossorigin="anonymous"></script>
+
+    <title>David Pape Jr</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
@@ -9,10 +11,6 @@
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
     />
     <link
       rel="stylesheet"
@@ -27,7 +25,9 @@
       <div class="overlay"></div>
       <div class="slides-container">
         <img src="images/patco-today/feature.png" alt="" />
+        <img src="images/savvas.png" alt="" />
       </div>
+
       <div class="titleMessage">
         <div class="heading">
           <p class="main">David Pape Jr | B.S. Computer Science</p>
@@ -109,45 +109,64 @@
 
     <!-- patcoToday -->
     <div id="patcoToday" class="patcoTodaySection section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2>MY patcoToday</h2>
-            <p>My patcoToday in web & programming languages.</p>
+      <div class="patco-page-wrapper">
+        <div class="patco-two-column-wrapper">
+          <div class="patco-logo-wrapper">
+            <div class="patco-padded-image">
+              <img src="images/logos/patco-today/ic_foreground.png" alt="">
+            </div>
           </div>
 
-          <div class="owl-carousel owl-theme">
-            <div class="skill">
-              <span class="chart" data-percent="85">
-                <span class="percent">85</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>HTML</h4>
+          <div class="patco-header-wrapper">
+            <div class="patco-header">
+              <h1>Patco Today</h1>
+              <p>Available for Android 8.0+</p> 
+              <p>Patco Today is (soon to be) available on the Google Play Store and F-Droid.</p>
+              <div class="patco-links">
+              <a href="https://play.google.com/store/apps/patco-today">
+                <img alt="Get it on Google Play"
+                    height="80"
+                    src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
+              </a>  
+              <a href="https://f-droid.org/app/patco-today">
+                <img alt="Get it on F-Droid"
+                    height="80"
+                    src="https://f-droid.org/badge/get-it-on.png" />
+              </a>
+              </div>
+              <h2>About</h2>
+              <p>Patco Today is a free, open-source transit app for Android. Primarily utilizing the Google Transit Feed Specification (GTFS) API, it provides the most up-to-date scheduling information for PATCO Transit.</p>    
+              <h2>Features:</h3>
+                <ul>
+                  <li>Plan transit trips between PATCO Stations ahead of time.</li>
+                  <li>The most up-to-date transit schedules.</li>
+                  <li>Automatic updates for special schedules.</li>
+                  <li>Caching of files for offline viewing.</li>
+                  <li>Support for android 8.0 or higher.</li>
+                  <li>Material You design implementation with light and dark themes.</li>
+                  <li>A completely ad-free experience.</li>
+                </ul>
             </div>
+          </div>
+        </div>
 
-            <div class="skill">
-              <span class="chart" data-percent="60">
-                <span class="percent">60</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>CSS</h4>
-            </div>
-
-            <div class="skill">
-              <span class="chart" data-percent="80">
-                <span class="percent">80</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>Javascript</h4>
-            </div>
-
-            <div class="skill">
-              <span class="chart" data-percent="45">
-                <span class="percent">45</span>
-                <canvas height="152" width="152"></canvas>
-              </span>
-              <h4>C#</h4>
-            </div>
+        <div class="patco-screenshots-wrapper">
+          <div class="patco-header">
+            <h1>Screenshots</h1>
+            <div class="screenshot-row">
+              <div class="screenshot-column">
+                <img src="images/patco-today/PatcoToday1.png" style="max-width: 20pc;">
+              </div>
+              <div class="screenshot-column">
+                <img src="images/patco-today/PatcoToday2.png" style="max-width: 20pc;">
+              </div>
+              <div class="screenshot-column">
+                <img src="images/patco-today/PatcoToday3.png" style="max-width: 20pc;">
+              </div>
+              <div class="screenshot-column">
+                <img src="images/patco-today/PatcoToday4.png" style="max-width: 20pc;">
+              </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -218,12 +237,40 @@
 
     <!-- Contact -->
     <div id="contact" class="contactSection section">
-      <div class="col-md-12 text-center">
-        <p class="subHeading">Do you want to contact me?</p>
-        <h2>Send an email now.</h2>
-        <a href="mailTo:contact@subuthai.xyz" class="contactButton"
-          >Contact me!</a
-        >
+      <div class="container">
+        <div class="circleHeading">
+          <div class="col-md-12 text-center">
+            <p class="subHeading">Connect With Me On</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="contact-item-wrapper">
+            <div class="contact-padded-image">
+              <i class="fa-brands fa-github-alt"></i>
+            </div>
+            <div class="contact-link">
+              <a href="https://www.github.com/davidp799/">GitHub</a>
+            </div>
+          </div>
+          <div class="contact-item-wrapper">
+            <div class="contact-padded-image">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="contact-link">
+              <a href="https://www.linkedin.com/in/david-pape-jr/">LinkedIn</a>
+            </div>
+          </div>
+          <div class="contact-item-wrapper">
+            <div class="contact-padded-image">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <div class="contact-link">
+              <a class="nav-link" href="#resume">Resume</a>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
 
@@ -232,8 +279,7 @@
     <div class="copyrightSection">
       <div class="col-md-12 text-center">
         <p>
-          copyright &copy; 2021 some rights reserved | 85% of website was made
-          by subuthai
+          Made with ❤️ in Philadelphia
         </p>
       </div>
     </div>
