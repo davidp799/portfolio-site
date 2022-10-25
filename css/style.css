@@ -127,14 +127,35 @@ profile-body {
   display: table;
 }
 
-
-
-
-/* other??? */
+/* Contact Section */
 .contactSection {
   background-color: #eceaf3;
 }
+.contact-image-wrapper img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.contact-padded-image {
+  padding: 10px
+}
+.contact-padded-image img {
+  border: 4px solid #282A35;
+  border-radius: 50%;
+  max-width: 96px;
+  max-height: 96px;
+  padding: 10px;
+}
+.contact-link a {
+  color: #282A35;
+  transition: all 200ms ease-in-out;
+}
+.contact-link a:hover {
+  color: #e29B90;
+  text-decoration: underline;
+}
 
+/* Other */
 .skill {
   text-align: center;
   margin-left: 10px;
@@ -223,23 +244,6 @@ profile-body {
   font-size: 45px;
   margin-left: -20%;
   color: #444;
-}
-
-.contact-padded-image {
-  padding: 60px;
-}
-
-.contact-padded-image img {
-  border: 4px solid #eceaf3;
-  border-radius: 50%;
-}
-
-i.fa-brands {
-  display: inline-block;
-  border-radius: 60px;
-  box-shadow: 0 0 2px #888;
-  padding: 0.5em 0.6em;
-
 }
 
 .filter a {
