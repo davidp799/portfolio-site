@@ -11,7 +11,7 @@ ability
 able
 aboriginal
 abortion
-home
+about
 above
 abraham
 abroad
@@ -8207,7 +8207,7 @@ ski
 skiing
 skill
 skilled
-patcoToday
+skills
 skin
 skins
 skip
@@ -8477,7 +8477,7 @@ stationery
 stations
 statistical
 statistics
-tellItForMe
+stats
 status
 statute
 statutes

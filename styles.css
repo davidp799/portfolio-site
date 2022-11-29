@@ -3,10 +3,8 @@ body {
     font-family: "Raleway", sans-serif;
     margin: 0px;
 }
-
 .container {
     position: relative;
-    min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
 }
@@ -16,24 +14,6 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 26px;
-}
-.nav-divider {
-    display: flex;
-    padding-left: 1vw;
-    padding-right: 1vw;
-}
-.left-side {
-    display: flex;
-}
-.nav-wrapper > .left-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-.nav-wrapper > .middle-side > div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
 }
 .nav-link-wrapper {
     position: relative;
@@ -50,7 +30,6 @@ body {
 .nav-link-wrapper:hover {
     border-bottom: 1px solid black;
 }
-
 .nav-link-wrapper a:hover {
     color: black;
 }
@@ -60,13 +39,42 @@ body {
 .active-nav-link a{
     color: black !important;
 }
+.nav-left {
+    display: flex;
+    border-right: 2px solid whitesmoke;
+}
+.nav-left div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.nav-middle {
+    display: flex;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+}
+.nav-middle div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.nav-right {
+    border-left: 2px solid whitesmoke;
+    cursor: pointer;
+}
+.nav-right div {
+    margin-left: 20px;
+}
 
 /* Portfolio styles */
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 80vh;
+    min-height: 90vh;
     background-color: #282A35;
+    padding-bottom: 2.5rem;
 }
 .portfolio-item-wrapper {
     position: relative;
@@ -112,30 +120,25 @@ body {
 /* Contact page */
 .contact-page-wrapper {
     background-color: #282A35;
-    min-height: 80vh;
+    min-height: 100vh;
     padding-bottom: 8vh;   
 }
 .contact-two-column-wrapper {
     display: flex;
 }
-.profile-image-wrapper img {
+.contact-wrapper-left {
+    background: #282A35;
+}
+.contact-wrapper-left img {
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
-.profile-content-wrapper {
-    min-height: 80vh;
-    padding: 30px;
+.contact-wrapper-right {
+    min-height: 100vh;
+    padding: 48px;
     flex: 50%;
     background-color: #f3ecea;
-}
-.profile-header {
-    color: black
-}
-.profile-subtext {
-    color: black
-}
-.profile-links {
     color: black;
 }
 profile-body {
@@ -147,6 +150,29 @@ profile-body {
 .contact-padded-image img {
     border: 4px solid #eceaf3;
     border-radius: 50%;
+}
+.contact-links-wrapper {
+    height: auto;
+    width: 100%;
+    background: #d9eee1;
+    color: black;
+    text-align: center;
+}
+.contact-links-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.contact-links-row li {
+    list-style-type: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.contact-links-row img {
+    height: 48px;
+    width: 48px;
 }
 
 /* Find It Rentals Page */
@@ -163,8 +189,6 @@ profile-body {
 /* Patco Today page */
 .patco-page-wrapper {
     background-color: #282A35;
-    height: 80vh;
-    padding-bottom: 8vh;   
 }
 .patco-two-column-wrapper {
     display: flex;
@@ -175,9 +199,7 @@ profile-body {
     object-fit: cover;
 }
 .patco-header-wrapper {
-    height: 80vh;
     padding: 30px;
-    flex: 50%;
     background-color: #f3ecea;
 }
 .patco-header {
@@ -196,18 +218,26 @@ profile-body {
     border: 4px solid #eceaf3;
     border-radius: 50%;
 }
-patco-body {
+.patco-body {
     background-color: #eceaf3;
 }
-.screenshot-column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+.screenshot-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
-.screenshot-row::after {
-    content: "";
-    clear: both;
-    display: table;
+.screenshot-column {
+    border-radius: 8px;
+    margin: 40px;
+    cursor: pointer;
+}
+.screenshot-column img {
+    border-radius: 8px;
+    border-color: whitesmoke;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    height: 380px;
+    width: auto;
 }
 
 /* Find It Rentals Page */
@@ -231,7 +261,7 @@ patco-body {
     background-color: #282A35;
     display: grid;
     place-items: center;
-    min-height: 80vh;
+    min-height: 100vh;
     margin-left: 5vw;
     margin-right: 5vw;
     overflow: hidden;
@@ -284,15 +314,30 @@ input[type=submit] {
 /* Footer Styling */
 footer {
     position: absolute;
-    padding: 10px 10px 0px 10px;
     bottom: 0;
     width: 100%;
-    height: 8vh;
-    background: #d9eee1;
+    height: auto;
+    background: #282A35;
     text-align: center;
 }
-.footer-divider {
-    display: flex;
-    padding-left: 1vw;
-    padding-right: 1vw;
+footer h1, footer p {
+    color: white;
 }
+.footer-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.footer-row li {
+    list-style-type: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.footer-row img {
+    filter: invert(99%) sepia(1%) saturate(0%) hue-rotate(197deg) brightness(110%) contrast(100%);
+    height: 48px;
+    width: 48px;
+}
+
