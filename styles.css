@@ -1,4 +1,4 @@
-/* Master styles */
+/* Master Styles */
 body {
     font-family: "Raleway", sans-serif;
     margin: 0px;
@@ -6,7 +6,7 @@ body {
 .container {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1;
 }
 
 /* Nav styles */
@@ -69,6 +69,9 @@ body {
 }
 
 /* Portfolio styles */
+.content-wrapper {
+    background: #282A35;
+}
 .portfolio-items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -119,30 +122,27 @@ body {
 
 /* Contact page */
 .contact-page-wrapper {
-    background-color: #282A35;
+    background: #d9eee1;
     min-height: 100vh;
     padding-bottom: 8vh;   
 }
-.contact-two-column-wrapper {
+.contact-row {
     display: flex;
 }
-.contact-wrapper-left {
+.contact-column-left {
     background: #282A35;
 }
-.contact-wrapper-left img {
+.contact-column-left img {
     width: 300px;
     height: 300px;
     object-fit: cover;
 }
-.contact-wrapper-right {
+.contact-column-right {
     min-height: 100vh;
     padding: 48px;
     flex: 50%;
     background-color: #f3ecea;
     color: black;
-}
-profile-body {
-    background-color: #eceaf3;
 }
 .contact-padded-image {
     padding: 60px;
@@ -151,26 +151,24 @@ profile-body {
     border: 4px solid #eceaf3;
     border-radius: 50%;
 }
-.contact-links-wrapper {
-    height: auto;
-    width: 100%;
+.contact-check-out {
     background: #d9eee1;
     color: black;
     text-align: center;
 }
-.contact-links-row {
+.contact-check-out-row {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.contact-links-row li {
+.contact-check-out-row li {
     list-style-type: none;
     margin-left: 40px;
     margin-right: 40px;
     cursor: pointer;
 }
-.contact-links-row img {
+.contact-check-out-row img {
     height: 48px;
     width: 48px;
 }
@@ -188,38 +186,38 @@ profile-body {
 
 /* Patco Today page */
 .patco-page-wrapper {
-    background-color: #282A35;
-}
-.patco-two-column-wrapper {
-    display: flex;
-}
-.patco-logo-wrapper img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-}
-.patco-header-wrapper {
-    padding: 30px;
-    background-color: #f3ecea;
-}
-.patco-header {
-    color: black
-}
-.patco-links {
-    color: black;
-}
-.patco-body {
     background-color: #eceaf3;
 }
+.patco-row {
+    display: flex;
+}
+.patco-column-left {
+    background-color: #282A35;
+}
+.patco-column-left img {
+    width: 300px;
+    object-fit: cover;
+}
 .patco-padded-image {
-    padding: 60px;
+    margin: 60px;
 }
 .patco-padded-image img {
     border: 4px solid #eceaf3;
     border-radius: 50%;
 }
-.patco-body {
+.patco-column-right {
+    background-color: #f3ecea;
+}
+.patco-description {
+    color: black;
+    margin: 40px;
+}
+.patco-links {
+    color: black;
+}
+.patco-screenshots {
     background-color: #eceaf3;
+    margin: 40px;
 }
 .screenshot-row {
     display: flex;
@@ -228,8 +226,7 @@ profile-body {
     justify-content: center;
 }
 .screenshot-column {
-    border-radius: 8px;
-    margin: 40px;
+    margin: 30px;
     cursor: pointer;
 }
 .screenshot-column img {
@@ -313,7 +310,7 @@ input[type=submit] {
 
 /* Footer Styling */
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: auto;
