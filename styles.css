@@ -72,14 +72,14 @@ body {
 .content-wrapper {
     background: #282A35;
 }
-.portfolio-items-wrapper {
+.portfolio-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    min-height: 90vh;
+    min-height: 80vh;
     background-color: #282A35;
     padding-bottom: 2.5rem;
 }
-.portfolio-item-wrapper {
+.portfolio-column {
     position: relative;
 }
 .portfolio-img-background {
@@ -123,8 +123,6 @@ body {
 /* Contact page */
 .contact-page-wrapper {
     background: #d9eee1;
-    min-height: 100vh;
-    padding-bottom: 8vh;   
 }
 .contact-row {
     display: flex;
@@ -138,8 +136,7 @@ body {
     object-fit: cover;
 }
 .contact-column-right {
-    min-height: 100vh;
-    padding: 48px;
+    padding: 42px;
     flex: 50%;
     background-color: #f3ecea;
     color: black;
@@ -155,6 +152,7 @@ body {
     background: #d9eee1;
     color: black;
     text-align: center;
+    padding: 42px;
 }
 .contact-check-out-row {
     display: flex;
@@ -186,7 +184,7 @@ body {
 
 /* Patco Today page */
 .patco-page-wrapper {
-    background-color: #eceaf3;
+    background-color: magenta;
 }
 .patco-row {
     display: flex;
@@ -210,14 +208,14 @@ body {
 }
 .patco-description {
     color: black;
-    margin: 40px;
+    padding: 42px;
 }
 .patco-links {
     color: black;
 }
 .patco-screenshots {
     background-color: #eceaf3;
-    margin: 40px;
+    padding: 42px;
 }
 .screenshot-row {
     display: flex;
@@ -325,11 +323,12 @@ footer h1, footer p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    height: auto;
 }
 .footer-row li {
     list-style-type: none;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
     cursor: pointer;
 }
 .footer-row img {
