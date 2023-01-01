@@ -1,116 +1,109 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
-    <title>David Pape Jr</title>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" > 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>David Pape Jr</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav-wrapper">
-      <div class="nav-left">
-        <div class="nav-link-wrapper active-nav-link">
-          <a href="index.html">Home</a>
-        </div>
-        <div class="nav-link-wrapper">
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
+    <header class="navBar" id="myTopNav">
+        <!-- Left (home/contact) -->
+        <nav class="nav-left">
+            <ul class="nav-links">
+                <li><a class="active" 
+                    href="index.html">Home</a></li>
+                <li><a class="nav-link" 
+                    href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- Middle (projects) -->
+        <nav class="nav-middle">
+            <ul class="nav-links">
+                <li><a class="nav-link" 
+                    href="find-it-rentals.html">FindIt Rentals</a></li>
+                <li><a class="nav-link" 
+                    href="patco-today.html">Patco Today</a></li>
+                <li><a class="nav-link" 
+                    href="tell-it-for-me.html">Tell It For Me</a></li>
+            </ul>
+        </nav>
+        <!-- Right (branding) -->
+        <nav class="nav-right">
+            <a class="brand">DAVID PAPE JR</a>
+        </nav>
+        <!-- Hamburger Menu (responsive) -->
+        <a href="javascript:void(0);" class="hamburgerMenu" onclick="responsiveNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
 
-      <div class="nav-middle">
-        <div class="nav-link-wrapper">
-          <a href="find-it-rentals.html">FindIt Rentals</a>
+    <section class="about">
+        <div class="about-row">
+          <div class="about-column-left">
+            <div class="about-image">
+              <img src="images/profile.jpg">
+            </div>
+          </div>
+          
+          <div class="about-column-right">
+            <div class="about-header">
+                <h1>About Me</h1>
+                <h2>David Pape Jr</h2>
+                <div class="about-subtext">
+                    <p>B.S. Degree in Computer Science</p>
+                    <p>Rutgers University</p> 
+                    <p>drp155 [at] rutgers [dot] edu</p>
+                </div>
+                <div class="about-links">
+                    <a href="https://github.com/davidp799">[ GitHub ]</a> 
+                    <a href="https://www.linkedin.com/in/david-pape-jr/">[ LinkedIn ]</a>
+                </div>
+            </div>
+            <div class="about-body">
+              <h3>Hi there!</h3>
+              <p>I am a graduating undergraduate student at Rutgers University with an interest in solving real-world and societal problems through the application of data analysis and computer science.</p>
+              <p>I am particularly passionate about the local impact of technology especially within the context of our urban environment and public infrastructure.</p> 
+              <p>Aside from my academic work, I spend my time practicing music, working on DIY projects, and developing applications for Android.</p> 
+            </div>
+          </div>
         </div>
-        
-        <div class="nav-link-wrapper">
-          <a href="patco-today.html">Patco Today</a>
-        </div>
-
-        <div class="nav-link-wrapper">
-          <a href="tell-it-for-me.html">Tell It For Me</a>
-        </div>
-      </div>
-
-      <div class="nav-right">
-        <div class="brand">
-          <div>DAVID PAPE JR</div>
-        </div>
-      </div>
-    </div>
     
-    <div class="content-wrapper">
-      <div class="portfolio-row">
-
-        <div class="portfolio-column">
-          <div class="portfolio-img-background" style="background-image:url(images/logos/find-it/ic_background.jpg)"></div>
-
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/find-it/ic_foreground.png" alt="">
-            </div>
-
-            <div class="subtitle">
-              <p>FindIt Rentals</p>
-              <p>Making rental searches easier.</p>
-            </div>
-          </div>
+    </section>
+    
+    <section class="contact">
+        <div class="contact-content">
+            <h1>Let's get in touch</h1>
+            <p>Have an exciting idea you'd like to work on or simply want to get to know me? Reach out to me below!</p>
+        </div>
+        <div class="contact-links">
+            <li><a href="https://www.github.com/davidp799/"><img src="images/icons/github.svg" alt="">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/david-pape-jr/"><img src="images/icons/linkedin.svg" alt="">LinkedIn</a></li>
+            <li><a href="https://davidp799.github.io/portfolio-site/#resume"><img src="images/icons/resume.svg" alt="">My Resume</a></li>
         </div>
 
-        <div class="portfolio-column">
-          <div class="portfolio-img-background" style="background-image:url(images/logos/patco-today/ic_background.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/patco-today/ic_foreground.png" alt="">
-            </div>
-
-            <div class="subtitle">
-              <p>Patco Today</p>
-              <p>Let's get there together.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-column">
-          <div class="portfolio-img-background" style="background-image:url(images/logos/tell-me/ic_background.jpg)"></div>
-          <div class="img-text-wrapper">
-            <div class="logo-wrapper">
-              <img src="images/logos/tell-me/ic_foreground.png" alt="">
-            </div>
-
-            <div class="subtitle">
-              <p>Tell It For Me</p>
-              <p>Generate a story from pop-ups.</p>
-            </div>
-        </div>
-      </div>
-    </div>
-
+    </section>
+    
     <footer>
-      <p>
-        Made with ❤️ in Philadelphia
-      </p> 
+        <p>Made with ❤️ in Philadelphia by David Pape</p>
     </footer>
-
-  </div>
-
+    
+    <script>
+    function responsiveNav() {
+        var x = document.getElementById("myTopNav");
+        if (x.className === "nav-left") {
+        x.className += " responsive";
+        } else if (x.className === "nav-middle") {
+        x.className += " responsive";
+        } else if (x.className === "nav-right") {
+        x.className += " responsive";
+        } else {
+        x.className = "topNav";
+        }
+    }
+    </script>
 </body>
-
-<script>
-  const portfolioItems = document.querySelectorAll('.portfolio-column')
-
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      portfolioItem.childNodes[1].classList.add('img-darken');
-    })
-    portfolioItem.addEventListener('mouseout', () => {
-      portfolioItem.childNodes[1].classList.remove('img-darken');
-    })
-  })
-</script>
-
 </html>

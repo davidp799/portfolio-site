@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>David Pape Jr</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* NavBar Styling */
+    .topNav {
+      overflow: hidden;
+      background-color: white;
+    }
+    .topNav a {
+      float: left;
+      display: block;
+      color: #989898;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topNav a:hover {
+      color: black;
+    }
+    .topNav a.active {
+      color: black;
+    }
+    .topNav .icon {
+      display: none;
+    }
+    @media screen and (max-width: 600px) {
+      .topNav a:not(:first-child) {display: none;}
+      .topNav a.icon {
+        float: right;
+        display: block;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .topNav.responsive {position: relative;}
+      .topNav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .topNav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    .navLeft {
+      border-right: 2px solid black;
+    }
+    .navMiddle {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      border-left: 2px solid whitesmoke;
+      border-right: 2px solid whitesmoke;
+    }
+    .navRight {
+      border-left: 2px solid whitesmoke;
+      cursor: pointer;
+    }
+
+    /* Main Content Styling */
+    section {
+      max-width: 100%;
+      padding: 48px;
+      background-color: #282a35;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin: 0 0 20px 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    footer {
+      background-color: #282a35;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* About Section Styling */
+    .about-wrapper {
+      background: #d9eee1;
+    }
+    .about-row {
+      display: flex;
+    }
+    .about-column-left {
+      background: #282A35;
+    }
+    .about-column-left img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    .about-column-right {
+      padding: 42px;
+      flex: 50%;
+      background-color: #f3ecea;
+      color: black;
+    }
+    .about-image {
+      padding: 60px;
+    }
+    .about-image img {
+      border: 4px solid #eceaf3;
+      border-radius: 50%;
+    }
+
+    /* Contact Section Styling */
+    .contact-section {
+      background: #d9eee1;
+      color: black;
+      text-align: center;
+      padding: 42px;
+    }
+    .contact-section-row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-section-row li {
+      list-style-type: none;
+      margin-left: 40px;
+      margin-right: 40px;
+      cursor: pointer;
+    }
+    .contact-section-row img {
+      height: 48px;
+      width: 48px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="topNav" id="myTopnav">
+    <div class="navLeft">
+      <a href="index.html" class="active">Home</a>
+      <a href="contact.html">Contact</a>  
+    </div>
+    <div class="navMiddle">
+      <a href="find-it-rentals.html">FindIt Rentals</a>
+      <a href="patco-today.html">Patco Today</a>
+      <a href="tell-it-for-me.html">Tell It For Me</a>  
+    </div>
+    <div class="navRight">
+      <a class="brand">DAVID PAPE JR</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+
+  <section class="about-section">
+    <div class="about-row">
+      <div class="about-column-left">
+        <div class="about-image">
+          <img src="images/profile.jpg">
+        </div>
+      </div>
+      
+      <div class="about-column-right">
+        <div class="about-header">
+          <h1>B.S. Degree in Computer Science</h1>
+          <div class="about-subtext">
+            <p>Rutgers University</p> 
+            <p>drp155 [at] rutgers [dot] edu</p>
+          </div>
+          <div class="about-links">
+            <a href="https://github.com/davidp799">[ GitHub ]</a> 
+            <a href="https://www.linkedin.com/in/david-pape-jr/">[ LinkedIn ]</a>
+          </div>
+        </div>
+        <div class="about-body">
+          <h3>Hi there!</h3>
+          <p>I am a graduating undergraduate student at Rutgers University with an interest in solving real-world and societal problems through the application of data analysis and computer science.</p>
+          <p>I am particularly passionate about the local impact of technology especially within the context of our urban environment and public infrastructure.</p> 
+          <p>Aside from my academic work, I spend my time practicing music, working on DIY projects, and developing applications for Android.</p> 
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="contact-section">
+    <h1>Let's get in touch!:</h1>
+    <div class="contact-section-row">
+      <li><a href="https://www.github.com/davidp799/"><img src="images/icons/github.svg" alt=""></a></li>
+      <li><a href="https://www.linkedin.com/in/david-pape-jr/"><img src="images/icons/linkedin.svg" alt=""></a></li>
+      <li><a href="https://davidp799.github.io/portfolio-site/#resume"><img src="images/icons/resume.svg" alt=""></a></li>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>Made with ❤️ in Philadelphia by David Pape</p>
+  </footer>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topNav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topNav";
+      }
+    }
+  </script>
+
+</body>
+</html>
