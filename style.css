@@ -1,6 +1,6 @@
 /* Master Styles */
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -110,7 +110,6 @@ section {
     max-width: 100%;
     padding-left: 60px;
     padding-right: 60px;
-    border-bottom: 3px dotted #E63946;
 }
 p {
     font-size: 1.2em;
@@ -127,6 +126,8 @@ section.about {
     min-height: 70vh;
 }
 .about-column-left {
+    width: 30%;
+    margin: 20px;
     padding: 60px;
 }
 .about-image {
@@ -134,16 +135,17 @@ section.about {
     padding-right: 60px;
 }
 .about-image img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
     object-fit: cover;
-
-    border: 4px dotted #E63946;
-    border-radius: 50%;
+    border-radius: 128px;
 }
 .about-column-right {
+    background-color: #ebf7ef;
+    color: #00210e;
+    margin: 20px;
     padding: 60px;
     flex: 50%;
+    border-radius: 36px;
 }
 .about-column-right h1 {
     font-size: 36px;
@@ -163,29 +165,78 @@ section.about {
     padding-bottom: 10px;
 }
 
-/* Contact Section Styling */
-section.contact {
-    background-color: #1D3557;
-    color: white;
+/* Skills Section Styling */
+section.skills {
+    padding: 20px;
+}
+.skills-content {
+    background-color: #e0e2ec;
+    color: #00210e;
+    width: 80vw;
+    min-height: 40vh;
+    height: auto;
+    margin: auto;
     padding: 60px;
+    border-radius: 36px;
     text-align: center;
-    border: none;
-    border-top: 3px dotted #E63946;
-    border-bottom: 3px dotted #E63946;
 }
-section.contact h1 {
-    font-size: 64px;
+.skills-content h1 {
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-section.contact p {
+.skills-content p {
     font-size: 32px;
 }
+.skills-content a {
+    font-size: 18px;
+}
+.skills-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.skills-links li {
+    list-style-type: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.skills-links img {
+    height: 48px;
+    width: 48px;
+}
+
+/* Contact Section Styling */
+section.contact {
+    padding: 20px;
+}
 .contact-content {
-    padding-left: 120px;
-    padding-right: 120px;
+    background-color: #e0e2ec;
+    color: #00210e;
+    width: 80vw;
+    min-height: 40vh;
+    height: auto;
+    margin: auto;
+    padding: 60px;
+    border-radius: 36px;
+    text-align: center;
+}
+.contact-content h1 {
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .contact-content p {
-    padding-left: 200px;
-    padding-right: 200px;
+    font-size: 32px;
+}
+.contact-content a {
+    font-size: 18px;
 }
 .contact-links {
     display: flex;
@@ -204,6 +255,52 @@ section.contact p {
     width: 48px;
 }
 
+/* Patco Today Section Styling */
+section.patco-today {
+    padding: 20px;
+}
+.patco-today-content {
+    background-color: #e0e2ec;
+    color: #00210e;
+    width: 80vw;
+    min-height: 40vh;
+    height: auto;
+    margin: auto;
+    padding: 60px;
+    border-radius: 36px;
+    text-align: center;
+}
+.patco-today-content h1 {
+    font-size: 36px;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.patco-today-content p {
+    font-size: 32px;
+}
+.patco-today-content a {
+    font-size: 18px;
+}
+.patco-today-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.patco-today-links li {
+    list-style-type: none;
+    margin-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.patco-today-links img {
+    height: 48px;
+    width: 48px;
+}
+
+
 
 /* Footer Styling */
 footer {
@@ -212,5 +309,4 @@ footer {
     padding-top: 40px;
     padding-bottom: 20px;
     text-align: center;
-    border-top: 3px dotted #E63946;
 }
