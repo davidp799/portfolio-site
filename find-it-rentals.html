@@ -38,13 +38,99 @@
     </a>
   </header>
 
-  <div class="container">
+    <section class="find-it-rentals" id="find-it-rentals">
+        <div class="find-it-rentals-row">
+            <div class="find-it-rentals-column-left">
+            <div class="find-it-rentals-image">
+                <img src="images/profile.jpg">
+            </div>
+            </div>
+            
+            <div class="find-it-rentals-column-right">
+            <div class="find-it-rentals-header">
+                <h1>About Me</h1>
+                <h2>David Pape Jr</h2>
+                <div class="find-it-rentals-subtext">
+                    <p>Rutgers University 2023</p> 
+                    <p>B.S. Degree in Computer Science</p>
+                </div>
+                <div class="find-it-rentals-links">
+                    <a href="https://github.com/davidp799">[ GitHub ]</a> 
+                    <a href="https://www.linkedin.com/in/david-pape-jr/">[ LinkedIn ]</a>
+                </div>
+            </div>
+            <div class="find-it-rentals-body">
+                <h3>Hi there!</h3>
+                <p>I am a graduating undergraduate student at Rutgers University with an interest in solving real-world and societal problems through the application of data analysis and computer science.</p>
+                <p>I am particularly passionate about the local impact of technology especially within the context of our urban environment and public infrastructure.</p> 
+                <p>Aside from my academic work, I spend my time practicing music, working on DIY projects, and developing applications for Android.</p> 
+            </div>
+            </div>
+        </div>
 
-    <div class="find-it-page-wrapper">
-      
-    </div>
+        <div class="icons">
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save icon-svg">
+                <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                <polyline points="17 21 17 13 7 13 7 21"></polyline>
+                <polyline points="7 3 7 8 15 8"></polyline>
+                </svg>
+                <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="squircle">
+                <path d="M 0, 100 C 0, 12 12, 0 100, 0 S 200, 12 200, 100 188, 200 100, 200 0, 188 0, 100" fill="var(--bg)"></path>
+                </svg>
+            </div>
+            
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-code icon-svg">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="squircle">
+                <path d="M 0, 100 C 0, 12 12, 0 100, 0 S 200, 12 200, 100 188, 200 100, 200 0, 188 0, 100" fill="var(--bg)"></path>
+                </svg>
+            </div>
+            
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-coffee icon-svg">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                <line x1="6" y1="1" x2="6" y2="4"></line>
+                <line x1="10" y1="1" x2="10" y2="4"></line>
+                <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+                <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="squircle">
+                <path d="M 0, 100 C 0, 12 12, 0 100, 0 S 200, 12 200, 100 188, 200 100, 200 0, 188 0, 100" fill="var(--bg)"></path>
+                </svg>
+            </div>
+    
+            <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart icon-svg">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+                <svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="squircle">
+                <path d="M 0, 100 C 0, 12 12, 0 100, 0 S 200, 12 200, 100 188, 200 100, 200 0, 188 0, 100" fill="var(--bg)"></path>
+                </svg>
+            </div>
+    
+        </div>
 
-  </div>
+        <script>
+        function toggleSquircle() {
+            document.querySelector("button").addEventListener("click", (e) => {
+                if (document.body.classList.contains("no-squircle")) {
+                document.body.classList.remove("no-squircle");
+                e.target.innerHTML = "Turn Squircles Off";
+                } else {
+                document.body.classList.add("no-squircle");
+                e.target.innerHTML = "Turn Squircles On";
+                }
+            });
+        }
+        </script>
+
+        <button href="javascript:void(0);" onclick="toggleSquircle()">Turn Squircles Off</button>
+
+    </section>
+
 </body>
-
 </html>

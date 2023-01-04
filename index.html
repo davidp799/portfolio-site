@@ -42,6 +42,14 @@
         </a>
     </header>
 
+    <!-- Floating Dark/Light Mode Button -->
+    <div id="toggleDarkModeButton">
+        <button class="toggleDarkMode" onclick="toggleDarkMode()">
+            <img src="images/icons/darkMode.svg">
+        </button>
+    </div>
+
+
     <section class="about" id="about">
         <div class="about-row">
           <div class="about-column-left">
@@ -192,6 +200,10 @@
         } else {
         x.className = "topNav";
         }
+    }
+    function toggleDarkMode() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
     }
     </script>
 </body>
