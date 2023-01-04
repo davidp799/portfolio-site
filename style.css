@@ -150,7 +150,9 @@ p {
 
 /* About Section Styling */
 section.about {
-    padding-top: 80px;
+    padding: 1rem;
+    padding-top: 5rem;
+    min-height: 40vh;
 }
 .about-row {
     display: flex;
@@ -208,7 +210,8 @@ section.about {
 
 /* Skills Section Styling */
 section.skills {
-    padding: 20px;
+    padding: 1rem;
+    min-height: 10vh;
 }
 .skills-content {
     background-color: #e0e2ec;
@@ -258,7 +261,8 @@ section.skills {
 
 /* Contact Section Styling */
 section.contact {
-    padding: 20px;
+    padding: 1rem;
+    min-height: 10vh;
 }
 .contact-content {
     background-color: #e0e2ec;
@@ -308,18 +312,18 @@ section.contact {
 
 /* Patco Today Section Styling */
 section.patco-today {
-    padding: 20px;
+    padding: 1rem;
+    min-height: 80vh;
 }
 .patco-today-content {
     background-color: #e0e2ec;
     color: #00210e;
     width: 80vw;
-    min-height: 40vh;
-    height: auto;
     margin: auto;
-    padding: 60px;
+    margin-top: 5rem;
+    padding: 3rem;
     border-radius: 36px;
-    text-align: center;
+    text-align: left;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease 0s;
 }
@@ -327,72 +331,51 @@ section.patco-today {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .patco-today-content h1 {
-    font-size: 36px;
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+.patco-today-content h2 {
+    font-size: 2rem;
+    font-weight: normal;
 }
 .patco-today-content p {
-    font-size: 32px;
+    font-size: 1.5rem;
+    font-weight: normal;
 }
-.patco-today-content a {
-    font-size: 18px;
+.patco-links {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-.patco-today-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.patco-today-links li {
-    list-style-type: none;
-    margin-left: 40px;
-    margin-right: 40px;
-    cursor: pointer;
-}
-.patco-today-links img {
-    height: 48px;
-    width: 48px;
+.patco-links img {
+    height: 10vh;
 }
 .patco-row {
     display: flex;
-    color: #00210e;
 }
 .patco-column-left {
-    width: 30vw;
+    width: 40%;
     height: auto;
 }
-.patco-column-left img {
-    width: 300px;
+.patco-logo {
+    margin: 2rem;
+}
+.patco-logo img {
+    width: 20vw;
     object-fit: cover;
+    border-radius: 128px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
 }
-.patco-padded-image {
-    margin: 20px;
-}
-.patco-padded-image img {
-    border: 4px solid #00210e;
-    border-radius: 50%;
+.patco-logo img:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .patco-column-right {
-    width: 50vw;
+    width: 60%;
     height: auto;
-}
-.patco-description {
-    color: #00210e;
-    margin: 40px;
-}
-.patco-links {
-    color: #00210e;
 }
 
 .screenshot-row.is-fullscreen .carousel-cell {
     height: 100%;
-}
-
-
-.screenshot-row {
-
 }
 .screenshot-column {
     margin: 10px;
@@ -425,7 +408,8 @@ footer {
 
 /* TESTING STYLING */
 section.find-it-rentals {
-    padding-top: 80px;
+    padding: 1rem;
+    padding-top: 5rem;
 }
 .find-it-rentals-row {
     display: flex;
