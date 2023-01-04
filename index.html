@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" > 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
   <title>David Pape Jr</title>
 </head>
 
@@ -54,9 +55,8 @@
                 <h1>About Me</h1>
                 <h2>David Pape Jr</h2>
                 <div class="about-subtext">
+                    <p>Rutgers University 2023</p> 
                     <p>B.S. Degree in Computer Science</p>
-                    <p>Rutgers University</p> 
-                    <p>drp155 [at] rutgers [dot] edu</p>
                 </div>
                 <div class="about-links">
                     <a href="https://github.com/davidp799">[ GitHub ]</a> 
@@ -73,23 +73,112 @@
         </div>
     
     </section>
+
+    <section class="skills">
+        <div class="skills-content">
+            <h1>My Skills</h1>
+            <p>An overview of my skills and magical abilities:</p>
+            <div class="skills-languages">
+                <li><a><img src="images/icons/java.svg" alt="">Java</a></li>
+                <li><a><img src="images/icons/kotlin.svg" alt="">Kotlin</a></li>
+                <li><a><img src="images/icons/javascript.svg" alt="">Javascript</a></li>
+                <li><a><img src="images/icons/typescript.svg" alt="">Typescript</a></li>
+            </div>
+            <div class="skills-frameworks">
+                <li><a><img src="images/icons/android.svg" alt="">Android Studio</a></li>
+                <li><a><img src="images/icons/angular.svg" alt="">Angular</a></li>
+                <li><a><img src="images/icons/react.svg" alt="">React</a></li>
+                <li><a><img src="images/icons/nodejs.svg" alt="">Node.js</a></li>
+            </div>
+        </div>
+    </section>
     
     <section class="contact">
         <div class="contact-content">
             <h1>Let's get in touch</h1>
             <p>Have an exciting idea you'd like to work on or simply want to get to know me? Reach out to me below!</p>
+            <div class="contact-links">
+                <li><a href="https://www.github.com/davidp799/"><img src="images/icons/github.svg" alt="">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/david-pape-jr/"><img src="images/icons/linkedin.svg" alt="">LinkedIn</a></li>
+                <li><a href="https://davidp799.github.io/portfolio-site/#resume"><img src="images/icons/resume.svg" alt="">My Resume</a></li>
+            </div>
         </div>
-        <div class="contact-links">
-            <li><a href="https://www.github.com/davidp799/"><img src="images/icons/github.svg" alt="">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/david-pape-jr/"><img src="images/icons/linkedin.svg" alt="">LinkedIn</a></li>
-            <li><a href="https://davidp799.github.io/portfolio-site/#resume"><img src="images/icons/resume.svg" alt="">My Resume</a></li>
-        </div>
+    </section>
 
+    <section class="patco-today">
+        <div class="patco-today-content">
+            <h1>Patco Today</h1>
+            <div class="patco-row">
+                <div class="patco-column-left">
+                  <div class="patco-padded-image">
+                    <img src="images/logos/patco-today/ic_foreground.png">
+                  </div>
+                </div>
+                
+                <div class="patco-column-right">
+                  <div class="patco-description">
+                    <p>Available for Android 5.1+</p> 
+                    <p>Patco Today is (soon to be) available on the Google Play Store and F-Droid.</p>
+                    <div class="patco-links">
+                    <a href="https://play.google.com/store/apps/NOT_YET">
+                      <img alt="Get it on Google Play"
+                          height="80"
+                          src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
+                    </a>  
+                    <a href="https://f-droid.org/app/NOT_YET">
+                      <img alt="Get it on F-Droid"
+                          height="80"
+                          src="https://f-droid.org/badge/get-it-on.png" />
+                    </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="patco-body">
+                <h2>About:</h2>
+                <p>Patco Today is a free, open-source transit app for Android. Primarily utilizing the Google Transit Feed Specification (GTFS) API, it provides the most up-to-date scheduling information for PATCO Transit.</p>    
+                <h2>Features:</h3>
+                <ul>
+                    <li>Plan transit trips between PATCO Stations ahead of time.</li>
+                    <li>The most up-to-date transit schedules.</li>
+                    <li>Automatic updates for special schedules.</li>
+                    <li>Caching of files for offline viewing.</li>
+                    <li>Support for android 8.0 or higher.</li>
+                    <li>Material You design implementation with light and dark themes.</li>
+                    <li>A completely ad-free experience.</li>
+                </ul>
+            </div>
+
+              <div class="patco-screenshots">        
+                <h2>Screenshots:</h2>
+                <!-- Flickity HTML init -->
+                <div class="screenshot-row js-flickity"
+                    data-flickity-options='{ "wrapAround": true }'>
+                    <div class="screenshot-column">                    
+                        <img src="images/patco-today/PatcoTodayFramed1.png">
+                    </div>
+                    <div class="screenshot-column">
+                        <img src="images/patco-today/PatcoTodayFramed2.png">
+                    </div>
+                    <div class="screenshot-column">
+                        <img src="images/patco-today/PatcoTodayFramed3.png">
+                    </div>
+                    <div class="screenshot-column">
+                        <img src="images/patco-today/PatcoTodayFramed4.png">
+                    </div>
+                    <div class="screenshot-column">
+                        <img src="images/patco-today/PatcoTodayFramed5.png">
+                    </div>
+                </div>
+              </div>
+        </div>
     </section>
     
     <footer>
         <p>Made with ❤️ in Philadelphia by David Pape</p>
     </footer>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     
     <script>
     function responsiveNav() {
