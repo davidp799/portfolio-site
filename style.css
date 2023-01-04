@@ -5,6 +5,8 @@
     padding: 0;
 }
 
+html { scroll-behavior: smooth; } 
+
 /* NavBar Styles */
 header {
     background-color: #F1FAEE;
