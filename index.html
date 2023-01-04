@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2.1.2/dist/flickity.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" > 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <title>David Pape Jr</title>
@@ -153,8 +153,8 @@
                 <h2>Screenshots:</h2>
                 <!-- Flickity HTML init -->
                 <div class="screenshot-row js-flickity"
-                    data-flickity-options='{ "wrapAround": true }'>
-                    <div class="screenshot-column">                    
+                    data-flickity='{ "fullscreen": true, "autoPlay": true, "wrapAround": true}'>
+                    <div class="screenshot-column">
                         <img src="images/patco-today/PatcoTodayFramed1.png">
                     </div>
                     <div class="screenshot-column">
@@ -178,7 +178,7 @@
         <p>Made with ❤️ in Philadelphia by David Pape</p>
     </footer>
     
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2.1.2/dist/flickity.pkgd.js"></script>
     
     <script>
     function responsiveNav() {

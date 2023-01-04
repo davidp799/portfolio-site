@@ -354,6 +354,12 @@ section.patco-today {
 .patco-links {
     color: #00210e;
 }
+
+.screenshot-row.is-fullscreen .carousel-cell {
+    height: 100%;
+}
+
+
 .screenshot-row {
 
 }
