@@ -1,8 +1,15 @@
 /* Master Styles */
 * {
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
     margin: 0;
     padding: 0;
+}
+* p {
+    font-size: 1.2rem;
+}
+* a {
+    font-size: 1.2rem;
 }
 .dark-mode {
     background-color: black;
@@ -38,7 +45,6 @@ nav li {
 }
 nav a {
     font-weight: 500;
-    font-size: 1.2em;
     text-decoration: none;
     padding: 10px 0px;
     display: inline-block;
@@ -143,7 +149,6 @@ section {
     padding-right: 60px;    
 }
 p {
-    font-size: 1.2em;
     line-height: 1.5;
     margin: 0 0 20px 0;
 }
@@ -164,7 +169,7 @@ section.about {
     padding: 60px;
 }
 .about-image {
-    padding-left: 60px;
+    padding-left: ;
     padding-right: 60px;
 }
 .about-image img {
@@ -191,19 +196,18 @@ section.about {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .about-column-right h1 {
-    font-size: 36px;
+    font-size: 2.2rem; 
     text-decoration: underline;
     text-decoration-style: dotted;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .about-column-right h2 {
-    font-size: 28px;
+    font-size: 1.8rem;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .about-subtext {
-    font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -230,17 +234,11 @@ section.skills {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .skills-content h1 {
-    font-size: 36px;
+    font-size: 2.2rem;
     text-decoration: underline;
     text-decoration-style: dotted;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.skills-content p {
-    font-size: 32px;
-}
-.skills-content a {
-    font-size: 18px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 .skills-links {
     display: flex;
@@ -281,17 +279,10 @@ section.contact {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .contact-content h1 {
-    font-size: 36px;
     text-decoration: underline;
     text-decoration-style: dotted;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-.contact-content p {
-    font-size: 32px;
-}
-.contact-content a {
-    font-size: 18px;
 }
 .contact-links {
     display: flex;
@@ -331,15 +322,12 @@ section.patco-today {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .patco-today-content h1 {
-    font-size: 4rem;
     font-weight: bolder;
 }
 .patco-today-content h2 {
-    font-size: 2rem;
     font-weight: normal;
 }
 .patco-today-content p {
-    font-size: 1.5rem;
     font-weight: normal;
 }
 .patco-links {
@@ -448,19 +436,16 @@ section.find-it-rentals {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .find-it-rentals-column-right h1 {
-    font-size: 36px;
     text-decoration: underline;
     text-decoration-style: dotted;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .find-it-rentals-column-right h2 {
-    font-size: 28px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 .find-it-rentals-subtext {
-    font-size: 18px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
