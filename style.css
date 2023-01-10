@@ -240,21 +240,23 @@ section.skills {
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.skills-links {
+.skills-section {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
 }
-.skills-links li {
-    list-style-type: none;
-    margin-left: 40px;
-    margin-right: 40px;
+.skills-item {
+    text-align: justify;
+    width: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
     cursor: pointer;
 }
-.skills-links img {
-    height: 48px;
-    width: 48px;
+.skills-item img {
+    display: block;
+    margin: 0 auto;
+    height: 4rem;
+    width: 4rem;
 }
 
 /* Contact Section Styling */
