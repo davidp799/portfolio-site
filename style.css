@@ -108,7 +108,7 @@ nav a.active {
     width: 20%;
     text-align: center;
 }
-.hamburgerMenu {
+.navHamburger {
     padding-left: 20px;
     padding-right: 20px;
     border-left: 2px solid whitesmoke;
@@ -210,6 +210,15 @@ section.about {
 .about-subtext {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+@media all and (max-width:800px)
+{
+    .about-row
+    {
+        display: block; 
+        float: none; 
+        width: 100%;
+    }
 }
 
 /* Skills Section Styling */

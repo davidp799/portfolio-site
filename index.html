@@ -15,20 +15,20 @@
         <!-- Left (home/contact) -->
         <nav class="nav-left">
             <ul class="nav-links">
-                <li><a class="active" 
+                <li><a class="active" id="navHome"
                     href="#about">Home</a></li>
-                <li><a class="nav-link" 
+                <li><a class="nav-link" id="navItem"
                     href="#about">Contact</a></li>
             </ul>
         </nav>
         <!-- Middle (projects) -->
         <nav class="nav-middle">
-            <ul class="nav-links">
-                <li><a class="nav-link" 
+            <ul class="nav-links" id="navLinks">
+                <li><a class="nav-link"
                     href="find-it-rentals.html">FindIt Rentals</a></li>
-                <li><a class="nav-link" 
+                <li><a class="nav-link"
                     href="#patco-today">Patco Today</a></li>
-                <li><a class="nav-link" 
+                <li><a class="nav-link"
                     href="tell-it-for-me.html">Tell It For Me</a></li>
             </ul>
         </nav>
@@ -218,10 +218,8 @@
     
     <script>
     function responsiveNav() {
-        var x = document.getElementById("myTopNav");
-        if (x.className === "nav-left") {
-        x.className += " responsive";
-        } else if (x.className === "nav-middle") {
+        var x = document.getElementById("navLinks");
+        if (x.className === "nav-middle") {
         x.className += " responsive";
         } else if (x.className === "nav-right") {
         x.className += " responsive";
