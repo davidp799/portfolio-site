@@ -15,7 +15,9 @@
     background-color: black;
     color: white;
 }
-html { scroll-behavior: smooth; } 
+html {
+    scroll-behavior: smooth; 
+} 
 
 /* NavBar Styles */
 header {
@@ -25,7 +27,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80px;
+    min-height: 80px;
     width: 100%;
     overflow: hidden;
 }
@@ -94,35 +96,23 @@ nav a.active {
     width: min-content;
     display: none;
 }
-/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+/* Set layout for mobile navBar */
 @media screen and (max-width: 600px) {
-    .nav-bar a, .nav-right {
+    .nav-bar a {
         float: none;
         display: block;
     }
-    .nav-middle a {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: none;
-    }
-}
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .nav-bar nav.nav-left a:not(:first-child) {
+    /* Hide all links except "Home" */
+    .nav-bar nav.nav-left a:not(:first-child), nav.nav-middle a, nav.nav-right a {
         display: none;
-        }
-    .nav-bar nav.nav-middle a {
-        display: none
     }
-    .nav-bar nav.nav-right a {
-        display: none
-    }
+    /* Show Hamburger Menu */
     .nav-bar a.icon {
         float: right;
         display: block;
     }
 }
+/* Display vertial menu on Hamburger Menu click */
 @media screen and (max-width: 600px) {
     .nav-bar.responsive {
         position: relative;
@@ -141,6 +131,10 @@ nav a.active {
         float: none;
         display: block;
         text-align: left;
+    }
+    .nav-bar.responsive a.nav-link.mobile {
+        display: none;
+        visibility: hidden;
     }
 }
     
@@ -202,6 +196,7 @@ nav a.active {
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 1;
 }
 
 /* Main Content Styling */
@@ -211,6 +206,7 @@ section {
     padding: 2vh;
     padding-left: 5vw;
     padding-right: 5vw;
+    overflow-x: hidden;
 }
 p {
     line-height: 1.5;
@@ -451,7 +447,7 @@ section.patco-today {
 .patco-column-right {
     width: 60%;
     height: auto;
-    margin: 2rem;
+    margin: 2vw;
 }
 .screenshot-row.is-fullscreen .carousel-cell {
     height: 100%;
