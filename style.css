@@ -82,7 +82,7 @@ nav a.active {
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
 @media screen and (max-width: 600px) {
-    .navBar a, .nav-right {
+    .nav-bar a, .nav-right {
         float: none;
         display: block;
     }
@@ -113,12 +113,67 @@ nav a.active {
     width: 20%;
     text-align: center;
 }
-.navHamburger {
+.hamburgerMenu {
     padding-left: 20px;
     padding-right: 20px;
-    border-left: 2px solid whitesmoke;
     width: min-content;
+    display: none;
 }
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .nav-bar nav.nav-middle {
+        display: none;
+    }
+    .nav-bar nav.nav-right {
+        display: none;
+    }
+    .nav-bar a.hamburgerMenu {
+        visibility: visible;
+        float: right;
+        display: block;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-bar a.hamburgerMenu {
+      float: right;
+      display: block;
+    }
+}
+  
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .nav-links li {
+        position: relative;
+    }
+    .nav-bar.responsive nav.nav-middle {
+        position: relative;
+    }
+    .nav-bar.responsive nav.nav-right {
+        position: relative;
+    }
+    .nav-bar nav.responsive a.hamburgerMenu {
+      position: absolute;
+      right: 50;
+      top: 50;
+    }
+    .nav-bar.responsive nav.nav-left a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .nav-bar.responsive nav.nav-middle a {
+        float: none;
+        display: block;
+        text-align: left;
+    }    
+    .nav-bar.responsive nav.nav-right a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+  }  
+
 
 /* Dark Mode Toggle Styling */
 .toggleDarkMode {
@@ -150,8 +205,9 @@ nav a.active {
 section {
     background-color: #F1FAEE;
     max-width: 100%;
-    padding-left: 60px;
-    padding-right: 60px;    
+    padding: 2vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 p {
     line-height: 1.5;
@@ -160,7 +216,6 @@ p {
 
 /* About Section Styling */
 section.about {
-    padding: 1rem;
     padding-top: 5rem;
     min-height: 40vh;
 }
@@ -168,14 +223,9 @@ section.about {
     display: flex;
     min-height: 70vh;
 }
-@media only screen and (min-width: 800px)  
-{
-    .about-column-left {
-        width: 30%;
-    }
-}
 .about-column-left {
-    margin: 20px;
+    display: flex;
+    align-items: start;
     padding: 60px;
 }
 .about-image {
@@ -221,8 +271,20 @@ section.about {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-@media all and (max-width:800px)
+@media only screen and (min-width: 600px)  
 {
+    section {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .about-column-left {
+        width: 30%;
+    }
+    .about-column-right {
+        margin-top: 60px;
+    }
+}
+@media all and (max-width:600px) {
     .about-row
     {
         display: block; 
@@ -230,34 +292,9 @@ section.about {
         width: 100%;
     }
 }
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 800px) {
-    .navBar a:not(:first-child) {display: none;}
-    .navBar a.hamburgerMenu {
-      float: right;
-      display: block;
-    }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 800px) {
-    .navBar.responsive {position: relative;}
-    .navBar.responsive a.hamburgerMenu {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .navBar.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-  
 
 /* Skills Section Styling */
 section.skills {
-    padding: 1rem;
     min-height: 10vh;
 }
 .skills-content {
@@ -303,7 +340,6 @@ section.skills {
 
 /* Contact Section Styling */
 section.contact {
-    padding: 1rem;
     min-height: 10vh;
 }
 .contact-content {
@@ -346,7 +382,6 @@ section.contact {
 
 /* Patco Today Section Styling */
 section.patco-today {
-    padding: 1rem;
     min-height: 80vh;
 }
 .patco-today-content {
@@ -365,12 +400,21 @@ section.patco-today {
 }
 .patco-today-content h1 {
     font-weight: bolder;
+    font-size: 4rem;
+    line-height: 15vh;
 }
 .patco-today-content h2 {
     font-weight: normal;
+    font-size: 1.5rem;
 }
 .patco-today-content p {
     font-weight: normal;
+}
+.patco-screenshots {
+    margin-bottom: 4vh;
+}
+.patco-description h2 {
+    font-weight: bold;
 }
 .patco-links {
     margin-top: 2rem;
@@ -402,8 +446,8 @@ section.patco-today {
 .patco-column-right {
     width: 60%;
     height: auto;
+    margin: 2rem;
 }
-
 .screenshot-row.is-fullscreen .carousel-cell {
     height: 100%;
 }
@@ -422,6 +466,12 @@ section.patco-today {
 .screenshot-column img:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
+.patco-description li {
+    padding: 5px;
+    margin-left: 35px;
+  
+}
+
 
 /* Footer Styling */
 footer {

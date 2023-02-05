@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header class="navBar" id="myTopNav">
+    <header class="nav-bar" id="navBar">
         <!-- Left (home/contact) -->
         <nav class="nav-left">
             <ul class="nav-links">
@@ -48,7 +48,6 @@
             <img src="images/icons/darkMode.svg">
         </button>
     </div>
-
 
     <section class="about" id="about">
         <div class="about-row">
@@ -148,7 +147,7 @@
                 </div>
                 
                 <div class="patco-column-right">
-                    <div class="patco-description">
+                    <div class="patco-title">
                         <h1>Patco Today</h1>
                         <h2>You'll always be on time!</h3>
                         <div class="patco-links">
@@ -159,13 +158,11 @@
                                 <img alt="Get it on F-Droid" src="https://f-droid.org/badge/get-it-on.png" />
                             </a>
                         </div>
-                        <p>Available for Android 8.0+</p> 
                     </div>
                 </div>
             </div>
 
             <div class="patco-screenshots">        
-                <h2>Screenshots</h2>
                 <!-- Flickity HTML init -->
                 <div class="screenshot-row js-flickity"
                     data-flickity='{ "fullscreen": true, "autoPlay": true, "wrapAround": true}'>
@@ -218,13 +215,12 @@
     
     <script>
     function responsiveNav() {
-        var x = document.getElementById("nav-links");
-        if (x.className === "nav-middle") {
-        x.className += " responsive";
-        } else if (x.className === "nav-right") {
-        x.className += " responsive";
+        var x = document.getElementById("navBar");
+        console.log("DOCUMENT = " + x.className)
+        if (x.className === "nav-bar") {
+            x.className += " responsive";
         } else {
-        x.className = "topNav";
+            x.className = "nav-bar";
         }
     }
     function toggleDarkMode() {
