@@ -325,6 +325,7 @@ section.skills {
 .skills-section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .skills-item {
@@ -369,6 +370,7 @@ section.contact {
 .contact-links {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
 }
