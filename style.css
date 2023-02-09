@@ -73,13 +73,7 @@ nav a.active {
 .nav-left {
     padding-left: 20px;
     padding-right: 20px;
-    width: 20%;
-    text-align: center;
-}
-.nav-middle {
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 50%;
+    width: 70%;
     text-align: center;
 }
 .nav-right {
@@ -123,12 +117,11 @@ nav a.active {
     .nav-bar.responsive nav.nav-left a {
         float: none;
         display: block;
-        text-align: left;
+        text-align: right;
     }
-    .nav-bar.responsive nav a {
-        float: none;
-        display: block;
-        text-align: left;
+    .nav-bar.responsive nav.nav-right a {
+        display: none;
+        visibility: hidden;
     }
     .nav-bar.responsive a.nav-link.mobile {
         display: none;
