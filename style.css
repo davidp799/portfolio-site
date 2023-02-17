@@ -358,12 +358,26 @@ section.contact {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    padding-top: 2vh;
 }
 .contact-links li {
     list-style-type: none;
     margin-left: 40px;
     margin-right: 40px;
     cursor: pointer;
+}
+.contact-links a {
+    color: black;
+}
+.contact-links a:link {
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+.contact-links a:hover {
+    text-decoration: underline;
+}
+.contact-links a:active {
+    text-decoration: underline;
 }
 .contact-links img {
     height: 48px;
@@ -483,54 +497,21 @@ section.find-it-rentals {
 }
 .find-it-rentals-row {
     display: flex;
-    min-height: 70vh;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
 }
-.find-it-rentals-column-left {
-    width: 30%;
-    margin: 20px;
-    padding: 60px;
+.find-it-rentals-row h1 {
+    font-size: 2.5rem;
 }
-.find-it-rentals-image {
-    padding-left: 60px;
-    padding-right: 60px;
+.find-it-rentals-row p {
+    font-size: 1.5rem;
 }
-.find-it-rentals-image img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 128px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease 0s;
+.find-it-rentals-header {
+    margin-top: 10vh;
 }
-.find-it-rentals-image img:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.find-it-rentals-column-right {
-    background-color: #ebf7ef;
-    color: #00210e;
-    margin: 20px;
-    padding: 60px;
-    flex: 50%;
-    border-radius: 36px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease 0s;
-}
-.find-it-rentals-column-right:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.find-it-rentals-column-right h1 {
-    text-decoration: underline;
-    text-decoration-style: dotted;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.find-it-rentals-column-right h2 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-.find-it-rentals-subtext {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
+
 
 .icons {
     display: flex;

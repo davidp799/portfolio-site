@@ -7,64 +7,41 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navBar" id="myTopNav">
-    <!-- Left (home/contact) -->
-    <nav class="nav-left">
-        <ul class="nav-links">
-            <li><a class="nav-link" 
-                href="index.html">Home</a></li>
-            <li><a class="nav-link" 
-                href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <!-- Middle (projects) -->
-    <nav class="nav-middle">
-        <ul class="nav-links">
-            <li><a class="active" 
-                href="find-it-rentals.html">FindIt Rentals</a></li>
-            <li><a class="nav-link" 
-                href="patco-today.html">Patco Today</a></li>
-            <li><a class="nav-link" 
-                href="tell-it-for-me.html">Tell It For Me</a></li>
-        </ul>
-    </nav>
-    <!-- Right (branding) -->
-    <nav class="nav-right">
-        <a class="brand">DAVID PAPE JR</a>
-    </nav>
-    <!-- Hamburger Menu (responsive) -->
-    <a href="javascript:void(0);" class="hamburgerMenu" onclick="responsiveNav()">
-        <i class="fa fa-bars"></i>
-    </a>
-  </header>
+    <header class="nav-bar" id="navBar">
+        <!-- Left (home/contact) -->
+            <nav class="nav-left">
+                <a class="nav-link" id="navHome" href="index.html">Home</a>
+                <a class="nav-link" id="navItem" href=index.html#about">Contact</a>
+                <a class="active" href="find-it-rentals.html">FindIt Rentals</a>
+                <a class="nav-link" href="index.html#patco-today">Patco Today</a>
+                <a class="nav-link" href="tell-it-for-me.html">Tell It For Me</a>
+            </nav>
+            <!-- Right (branding) -->
+            <nav class="nav-right">
+                <a class="brand">DAVID PAPE JR</a>
+            </nav>
+
+        <!-- Hamburger Menu (responsive) -->
+        <a href="javascript:void(0);" class="hamburgerMenu" onclick="responsiveNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    <!-- Floating Dark/Light Mode Button -->
+    <div id="toggleDarkModeButton">
+        <button class="toggleDarkMode" onclick="toggleDarkMode()">
+            <img src="images/icons/darkMode.svg">
+        </button>
+    </div>
 
     <section class="find-it-rentals" id="find-it-rentals">
         <div class="find-it-rentals-row">
-            <div class="find-it-rentals-column-left">
-            <div class="find-it-rentals-image">
-                <img src="images/profile.jpg">
-            </div>
-            </div>
-            
-            <div class="find-it-rentals-column-right">
             <div class="find-it-rentals-header">
-                <h1>About Me</h1>
-                <h2>David Pape Jr</h2>
-                <div class="find-it-rentals-subtext">
-                    <p>Rutgers University 2023</p> 
-                    <p>B.S. Degree in Computer Science</p>
-                </div>
-                <div class="find-it-rentals-links">
-                    <a href="https://github.com/davidp799">[ GitHub ]</a> 
-                    <a href="https://www.linkedin.com/in/david-pape-jr/">[ LinkedIn ]</a>
-                </div>
+                <h1>FindIt Rentals</h1>
+                <p>This Page is Currently Under Construction</p>
             </div>
             <div class="find-it-rentals-body">
-                <h3>Hi there!</h3>
-                <p>I am a graduating undergraduate student at Rutgers University with an interest in solving real-world and societal problems through the application of data analysis and computer science.</p>
-                <p>I am particularly passionate about the local impact of technology especially within the context of our urban environment and public infrastructure.</p> 
-                <p>Aside from my academic work, I spend my time practicing music, working on DIY projects, and developing applications for Android.</p> 
-            </div>
+                <p>Check back soon!</p>
             </div>
         </div>
 
@@ -132,5 +109,21 @@
 
     </section>
 
+    <script>
+        function responsiveNav() {
+            var x = document.getElementById("navBar");
+            console.log("DOCUMENT = " + x.className)
+            if (x.className === "nav-bar") {
+                x.className += " responsive";
+            } else {
+                x.className = "nav-bar";
+            }
+        }
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>    
+    
 </body>
 </html>
