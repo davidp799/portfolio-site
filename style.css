@@ -91,7 +91,7 @@ nav a.active {
 /* Set layout for mobile navBar */
 @media screen and (max-width: 600px) {
     .nav-bar a {
-        float: none;
+        float: left;
         display: block;
     }
     /* Hide all links except "Home" */
@@ -107,7 +107,7 @@ nav a.active {
 /* Display vertial menu on Hamburger Menu click */
 @media screen and (max-width: 600px) {
     .nav-bar.responsive {
-        position: relative;
+        position: fixed;
     }
     .nav-bar.responsive .icon {
         position: absolute;
@@ -128,7 +128,6 @@ nav a.active {
         visibility: hidden;
     }
 }
-    
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
     .nav-links li {
@@ -160,8 +159,7 @@ nav a.active {
         display: block;
         text-align: left;
     }
-  }  
-
+}  
 
 /* Dark Mode Toggle Styling */
 .toggleDarkMode {
