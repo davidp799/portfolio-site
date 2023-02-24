@@ -13,8 +13,8 @@
     font-size: 1.2rem;
 }
 .dark-mode {
-    background-color: black;
-    color: white;
+    background-color: #1f1f1f;
+    color: #e3e3e3;
 }
 html {
     scroll-behavior: smooth; 
@@ -199,6 +199,11 @@ section {
     padding-right: 5vw;
     overflow-x: hidden;
 }
+section h1, h2, h3, p, a {
+    padding-top: 1.5rem;
+    margin: 0;
+}
+
 p {
     line-height: 1.5;
     margin: 0 0 20px 0;
@@ -263,10 +268,6 @@ section.about {
 .about-column-right:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.about-column-right h1, h2, h3, p, a {
-    padding-top: 20px;
-    margin: 0;
-}
 .about-column-right h1 {
     font-size: 2.2rem; 
 }
@@ -316,8 +317,6 @@ section.skills {
 }
 .skills-content h1 {
     font-size: 2.2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
 }
 .skills-section {
     display: flex;
@@ -357,10 +356,6 @@ section.contact {
 }
 .contact-content:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.contact-content h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .contact-links {
     display: flex;
@@ -436,10 +431,9 @@ section.patco-today {
 }
 .patco-links {
     margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 .patco-links img {
-    height: 10vh;
+    height: 12vh;
 }
 .patco-row {
     display: flex;
@@ -495,8 +489,8 @@ section.patco-today {
 footer {
     background-color: white;
     color: black;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     text-align: center;
 }
 
