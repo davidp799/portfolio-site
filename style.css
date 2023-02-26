@@ -22,7 +22,7 @@ html {
 
 /* NavBar Styles */
 header {
-    background-color: white;
+    background-color: #fcfdff;
     position: fixed;
     z-index: 1;
     display: flex;
@@ -192,7 +192,7 @@ nav a.active {
 
 /* Main Content Styling */
 section {
-    background-color: white;
+    background-color: #fcfdff;
     max-width: 100%;
     padding: 2vh;
     padding-left: 5vw;
