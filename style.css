@@ -356,6 +356,11 @@ section.contact {
 .contact-content:hover {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+.contact-content h1 {
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height: 15vh;
+}
 .contact-links {
     display: flex;
     flex-direction: row;
@@ -363,12 +368,6 @@ section.contact {
     align-items: center;
     justify-content: center;
     padding-top: 2vh;
-}
-.contact-links li {
-    list-style-type: none;
-    margin-left: 40px;
-    margin-right: 40px;
-    cursor: pointer;
 }
 .contact-links a {
     color: black;
@@ -384,8 +383,20 @@ section.contact {
     text-decoration: underline;
 }
 .contact-links img {
-    height: 48px;
-    width: 48px;
+    height: 6vh;
+    width: 6vw;
+}
+.d-flex {
+  display: flex;
+  padding-top: 1vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-items-center {
+      align-items: center;
 }
 
 /* Patco Today Section Styling */
@@ -597,8 +608,6 @@ find-it-rentals button {
     background-color: var(--bg);
     border-radius: 16px;
 }
-
-
 /* Dark Mode */
 .dark-mode-primary {
     background-color: #1f1f1f;
@@ -608,10 +617,15 @@ find-it-rentals button {
     background-color: #2d2f31;
     color: #e3e3e3;
 }
+.dark-mode-on-primary a {
+    color: #e3e3e3;
+}
+.dark-mode-on-primary svg {
+    filter: invert(100%) sepia(4%) saturate(1850%) hue-rotate(280deg) brightness(112%) contrast(78%);
+}
 .dark-mode-secondary {
     background: #393b3d !important;
     color: #e3e3e3;
-
 }
 .dark-mode-secondary:hover {
     background: #004a77 !important;
