@@ -609,11 +609,11 @@ find-it-rentals button {
     color: #e3e3e3;
 }
 .dark-mode-secondary {
-    background: #393b3d;
+    background: #393b3d !important;
     color: #e3e3e3;
 
 }
 .dark-mode-secondary:hover {
-    background: #004a77;
+    background: #004a77 !important;
     color: #e3e3e3;
 }
