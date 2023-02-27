@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div class="icons">
+        <div class="icons" style="visibility: hidden;">
             <div class="icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save icon-svg">
                 <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
@@ -105,24 +105,37 @@
         }
         </script>
 
-        <button href="javascript:void(0);" onclick="toggleSquircle()">Turn Squircles Off</button>
+        <button href="javascript:void(0);" onclick="toggleSquircle()" style="visibility: hidden;">Turn Squircles Off</button>
 
     </section>
 
     <script>
-        function responsiveNav() {
-            var x = document.getElementById("navBar");
-            console.log("DOCUMENT = " + x.className)
-            if (x.className === "nav-bar") {
-                x.className += " responsive";
-            } else {
-                x.className = "nav-bar";
-            }
+    function responsiveNav() {
+        var x = document.getElementById("navBar");
+        console.log("DOCUMENT = " + x.className)
+        if (x.className === "nav-bar") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav-bar";
         }
-        function toggleDarkMode() {
-            var element = document.body;
-            element.classList.toggle("dark-mode");
+    }
+    function toggleDarkMode() {
+        const elements = [document.getElementById("navBar"), document.getElementById("about"), document.getElementById("skills"), 
+                            document.getElementById("contact"), document.getElementById("patco-today"), document.body, 
+                            document.getElementById("squiggle"), document.getElementById("footer"), document.getElementById("navBrand"), 
+                            document.getElementById("navHome"), document.getElementById("navContact"),document.getElementById("navFind"),
+                            document.getElementById("navPatco"), document.getElementById("navTell")];
+        const sections = [document.getElementById("aboutRight"), document.getElementById("skillsContent"),
+                            document.getElementById("patcoContent"), document.getElementById("contactContent")];
+        const buttons = [document.getElementById("button1"), document.getElementById("button2")];
+        for (let i=0; i<elements.length; i++) {
+            elements[i].classList.toggle("dark-mode-primary");
+        } for (let i=0; i<sections.length; i++) {
+            sections[i].classList.toggle("dark-mode-on-primary");
+        } for (let i=0; i<buttons.length; i++) {
+            buttons[i].classList.toggle("dark-mode-secondary");
         }
+    }
     </script>    
     
 </body>

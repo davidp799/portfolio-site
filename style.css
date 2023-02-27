@@ -504,11 +504,7 @@ footer {
     text-align: center;
 }
 
-
-
-
-
-/* TESTING STYLING */
+/* Find It Rentals Styling */
 section.find-it-rentals {
     padding: 1rem;
     padding-top: 5rem;
@@ -529,12 +525,9 @@ section.find-it-rentals {
 .find-it-rentals-header {
     margin-top: 10vh;
 }
-
-
 .icons {
     display: flex;
   }
-  
   .icon {
     position: relative;
     width: 64px;
@@ -545,39 +538,32 @@ section.find-it-rentals {
     cursor: pointer;
     transition: transform 200ms ease;
   }
-  
   .icon:hover {
     transform: scale(1.125);
   }
-  
   .icon .icon-svg {
     width: 32px;
     height: 32px;
     stroke: currentColor;
   }
-  
   .icon .squircle {
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
   }
-  
   .icon:nth-of-type(1) {
     color: #620042;
     --bg: #ffb8d2;
   }
-  
   .icon:nth-of-type(2) {
     color: #44056e;
     --bg: #dac4ff;
   }
-  
   .icon:nth-of-type(3) {
     color: #003e6b;
     --bg: #b6e0fe;
   }
-  
   .icon:nth-of-type(4) {
     color: #014807;
     --bg: #c1f2c7;
@@ -608,6 +594,30 @@ find-it-rentals button {
     background-color: var(--bg);
     border-radius: 16px;
 }
+
+/* Tell It For Me Styling */
+section.tell-it-for-me {
+    padding: 1rem;
+    padding-top: 5rem;
+}
+.tell-it-row {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    align-items: center;
+    text-align: center;
+}
+.tell-it-row h1 {
+    font-size: 2.5rem;
+}
+.tell-it-row p {
+    font-size: 1.5rem;
+}
+.tell-it-header {
+    margin-top: 10vh;
+}
+
+
 /* Dark Mode */
 .dark-mode-primary {
     background-color: #1f1f1f;
