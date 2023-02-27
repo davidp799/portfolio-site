@@ -12,10 +12,6 @@
 * a {
     font-size: 1.2rem;
 }
-.dark-mode {
-    background-color: #1f1f1f;
-    color: #e3e3e3;
-}
 html {
     scroll-behavior: smooth; 
 } 
@@ -600,4 +596,24 @@ find-it-rentals button {
 .no-squircle .icon {
     background-color: var(--bg);
     border-radius: 16px;
+}
+
+
+/* Dark Mode */
+.dark-mode-primary {
+    background-color: #1f1f1f;
+    color: #e3e3e3;
+}
+.dark-mode-on-primary {
+    background-color: #2d2f31;
+    color: #e3e3e3;
+}
+.dark-mode-secondary {
+    background: #393b3d;
+    color: #e3e3e3;
+
+}
+.dark-mode-secondary:hover {
+    background: #004a77;
+    color: #e3e3e3;
 }
