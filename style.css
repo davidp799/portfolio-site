@@ -506,13 +506,28 @@ footer {
 
 /* Find It Rentals Styling */
 section.find-it-rentals {
-    padding: 1rem;
-    padding-top: 5rem;
+    padding-top: 6rem;
+    min-height: 10vh;
+}
+.find-it-rentals-content {
+    background-color: #f3f6fc;
+    color: #00210e;
+    min-height: 40vh;
+    height: auto;
+    margin: auto;
+    padding: 60px;
+    border-radius: 36px;
+    text-align: center;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
+}
+.find-it-rentals-content:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .find-it-rentals-row {
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 50vh;
     align-items: center;
     text-align: center;
 }
@@ -524,66 +539,6 @@ section.find-it-rentals {
 }
 .find-it-rentals-header {
     margin-top: 10vh;
-}
-.icons {
-    display: flex;
-  }
-  .icon {
-    position: relative;
-    width: 64px;
-    height: 64px;
-    display: grid;
-    place-items: center;
-    margin: 0 8px;
-    cursor: pointer;
-    transition: transform 200ms ease;
-  }
-  .icon:hover {
-    transform: scale(1.125);
-  }
-  .icon .icon-svg {
-    width: 32px;
-    height: 32px;
-    stroke: currentColor;
-  }
-  .icon .squircle {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  .icon:nth-of-type(1) {
-    color: #620042;
-    --bg: #ffb8d2;
-  }
-  .icon:nth-of-type(2) {
-    color: #44056e;
-    --bg: #dac4ff;
-  }
-  .icon:nth-of-type(3) {
-    color: #003e6b;
-    --bg: #b6e0fe;
-  }
-  .icon:nth-of-type(4) {
-    color: #014807;
-    --bg: #c1f2c7;
-  }
-  
-find-it-rentals button {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    width: 156px;
-    padding: 0.5rem 1rem;
-    font-family: system-ui, sans-serif;
-    border: none;
-    background: #102a43;
-    color: #f0f4f8;
-    -webkit-font-smoothing: antialiased;
-    -mox-osx-font-smoothing: grayscale;
-    border-radius: 16px;
-    font-weight: 500;
-    cursor: pointer;
 }
 
 .no-squircle .squircle {
@@ -598,12 +553,28 @@ find-it-rentals button {
 /* Tell It For Me Styling */
 section.tell-it-for-me {
     padding: 1rem;
-    padding-top: 5rem;
+    padding-top: 6rem;
+}
+.tell-it-for-me-content {
+    background-color: #f3f6fc;
+    color: #00210e;
+    min-height: 10vh;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 5%;
+    border-radius: 36px;
+    text-align: center;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
+}
+.tell-it-for-me-content:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 .tell-it-row {
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    min-height: 50vh;
     align-items: center;
     text-align: center;
 }

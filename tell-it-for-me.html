@@ -9,104 +9,134 @@
 <body>
   <header class="nav-bar" id="navBar">
     <!-- Left (home/contact) -->
-        <nav class="nav-left">
+        <nav class="nav-left" id="navBox">
             <a class="nav-link" id="navHome" href="index.html">Home</a>
-            <a class="nav-link" id="navItem" href="index.html#about">Contact</a>
-            <a class="nav-link" href="find-it-rentals.html">FindIt Rentals</a>
-            <a class="nav-link" href="index.html#patco-today">Patco Today</a>
-            <a class="active" href="tell-it-for-me.html">Tell It For Me</a>
+            <a class="nav-link" id="navContact" href="index.html#about">Contact</a>
+            <a class="nav-link" id="navFind" href="find-it-rentals.html">FindIt Rentals</a>
+            <a class="nav-link" id="navPatco" href="#patco-today">Patco Today</a>
+            <a class="active" id="navTell" href="tell-it-for-me.html">Tell It For Me</a>
         </nav>
         <!-- Right (branding) -->
-        <nav class="nav-right">
-            <a class="brand">DAVID PAPE JR</a>
+        <nav class="nav-right" id="navBox">
+            <a class="brand" id="navBrand">DAVID PAPE JR</a>
         </nav>
 
     <!-- Hamburger Menu (responsive) -->
-    <a href="javascript:void(0);" class="hamburgerMenu" onclick="responsiveNav()">
+    <a href="javascript:void(0);" class="hamburgerMenu" id="navItem" onclick="responsiveNav()">
         <i class="fa fa-bars"></i>
     </a>
   </header>
 
-<!-- Floating Dark/Light Mode Button -->
-<div id="toggleDarkModeButton">
-    <button class="toggleDarkMode" onclick="toggleDarkMode()">
-        <img src="images/icons/darkMode.svg">
-    </button>
-</div>
-
-<section class="tell-it-for-me" id="tell-it-for-me">
-  <div class="tell-it-row">
-      <div class="tell-it-header">
-        <h1>Tell It For Me</h1>
-        <p>Generate a Cool Story Through Pop-ups!</p> 
-      </div>
-      <div class="tell-it-body">
-        <div class="tell-it-form" style="display: flex;">
-          <form>
-            <div style="float:left;">
-              <label for="noun1">NOUN:</label><br>
-              <input type="text" id="noun1" name="noun1" value=""><br>
-            </div>  
-            <div style="float:left;">
-              <label for="noun2">NOUN:</label><br>
-              <input type="text" id="noun2" name="noun2" value=""><br>  
-            </div>
-            <div style="float:left;">
-              <label for="adjective1">ADJECTIVE:</label><br>
-              <input type="text" id="adjective1" name="adjective1" value=""><br>  
-            </div>
-
-            <div style="clear:both;">&nbsp;</div>
-            <div style="float:left;">
-              <label for="verb1">VERB:</label><br>
-              <input type="text" id="verb1" name="verb1" value=""><br>
-            </div>
-            <div style="float:left;">
-              <label for="adjective">ADJECTIVE:</label><br>
-              <input type="text" id="adjective2" name="adjective2" value=""><br>  
-            </div>
-            <div style="float:left;">
-              <label for="place">PLACE:</label><br>
-              <input type="text" id="place" name="place" value=""><br>  
-            </div>
-            <div style="clear:both;">&nbsp;</div>
-            <input id = "storySubmit" type = "submit" value = "Tell It For Me!" />
-          </form> 
-      </div>
-      <p>Don't forget to allow pop-ups. It's okay, I promise! :)</p> 
-
+  <!-- Floating Dark/Light Mode Button -->
+  <div id="toggleDarkModeButton">
+      <button class="toggleDarkMode" onclick="toggleDarkMode()">
+          <img src="images/icons/darkMode.svg">
+      </button>
   </div>
-</section>
 
-<script src="scripts/tell-it-for-me/main.js" type="text/javascript"></script>
-<script>
-    function responsiveNav() {
-        var x = document.getElementById("navBar");
-        console.log("DOCUMENT = " + x.className)
-        if (x.className === "nav-bar") {
-            x.className += " responsive";
-        } else {
-            x.className = "nav-bar";
-        }
-    }
-    function toggleDarkMode() {
-        const elements = [document.getElementById("navBar"), document.getElementById("about"), document.getElementById("skills"), 
-                            document.getElementById("contact"), document.getElementById("patco-today"), document.body, 
-                            document.getElementById("squiggle"), document.getElementById("footer"), document.getElementById("navBrand"), 
-                            document.getElementById("navHome"), document.getElementById("navContact"),document.getElementById("navFind"),
-                            document.getElementById("navPatco"), document.getElementById("navTell")];
-        const sections = [document.getElementById("aboutRight"), document.getElementById("skillsContent"),
-                            document.getElementById("patcoContent"), document.getElementById("contactContent")];
-        const buttons = [document.getElementById("button1"), document.getElementById("button2")];
-        for (let i=0; i<elements.length; i++) {
-            elements[i].classList.toggle("dark-mode-primary");
-        } for (let i=0; i<sections.length; i++) {
-            sections[i].classList.toggle("dark-mode-on-primary");
-        } for (let i=0; i<buttons.length; i++) {
-            buttons[i].classList.toggle("dark-mode-secondary");
-        }
-    }
-</script>    
+  <section class="tell-it-for-me" id="tell-it-for-me">
+    <div class="tell-it-for-me-content" id="tellItContent">
+      <div class="tell-it-row">
+        <div class="tell-it-header">
+          <h1>Tell It For Me</h1>
+          <p>Generate a Cool Story Through Pop-ups!</p> 
+        </div>
+        <div class="tell-it-body">
+          <div class="tell-it-form" style="display: flex;">
+            <form>
+              <div style="float:left;">
+                <label for="noun1">NOUN:</label><br>
+                <input type="text" id="noun1" name="noun1" value=""><br>
+              </div>  
+              <div style="float:left;">
+                <label for="noun2">NOUN:</label><br>
+                <input type="text" id="noun2" name="noun2" value=""><br>  
+              </div>
+              <div style="float:left;">
+                <label for="adjective1">ADJECTIVE:</label><br>
+                <input type="text" id="adjective1" name="adjective1" value=""><br>  
+              </div>
 
+              <div style="clear:both;">&nbsp;</div>
+              <div style="float:left;">
+                <label for="verb1">VERB:</label><br>
+                <input type="text" id="verb1" name="verb1" value=""><br>
+              </div>
+              <div style="float:left;">
+                <label for="adjective">ADJECTIVE:</label><br>
+                <input type="text" id="adjective2" name="adjective2" value=""><br>  
+              </div>
+              <div style="float:left;">
+                <label for="place">PLACE:</label><br>
+                <input type="text" id="place" name="place" value=""><br>  
+              </div>
+              <div style="clear:both;">&nbsp;</div>
+              <input id = "storySubmit" type = "submit" value = "Tell It For Me!" />
+            </form> 
+        </div>
+        <p>Don't forget to allow pop-ups. It's okay, I promise! :)</p> 
+      </div>
+    </div>
+  </section>
+
+  <div _ngcontent-cit-c39="" class="squiggle" id="squiggle">
+    <svg _ngcontent-cit-c39="" aria-hidden="true" width="100%" height="8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <pattern _ngcontent-cit-c39="" id="a" width="91" height="8" patternUnits="userSpaceOnUse">
+            <g _ngcontent-cit-c39="" clip-path="url(#clip0_2426_11367)">
+                <path _ngcontent-cit-c39="" d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" stroke="#E1E3E1" stroke-linecap="square"></path>
+            </g>
+        </pattern>
+        <rect _ngcontent-cit-c39="" width="100%" height="100%" fill="url(#a)"></rect>
+    </svg>
+  </div>
+
+  <footer id="footer">
+    <p>Made with ❤️ in Philadelphia by David Pape</p>
+  </footer>
+
+  <!-- Tell It For Me -->
+  <script src="scripts/tell-it-for-me/main.js" type="text/javascript"></script>
+
+  <!-- Flickity Assets -->
+  <script src="https://unpkg.com/flickity@2.1.2/dist/flickity.pkgd.js"></script>
+
+  <!-- add shadow and shrink top navigation on scroll -->
+  <script>
+    window.addEventListener('scroll',(e)=>{
+        // add shadow on scroll
+        const nav = document.querySelector('.nav-bar');
+        if(window.pageYOffset>0){
+            nav.classList.add("add-shadow");
+        }else{
+            nav.classList.remove("add-shadow");
+        }
+    });
+  </script>
+
+  <!-- Interface Functions -->
+  <script>
+  function responsiveNav() {
+    var x = document.getElementById("navBar");
+    console.log("DOCUMENT = " + x.className)
+    if (x.className === "nav-bar") {
+        x.className += " responsive";
+    } else {
+        x.className = "nav-bar";
+    }
+  }
+  function toggleDarkMode() {
+    const elements = [document.getElementById("navBar"), document.body, document.getElementById("tell-it-for-me"),
+                        document.getElementById("squiggle"), document.getElementById("footer"), document.getElementById("navBrand"), 
+                        document.getElementById("navHome"), document.getElementById("navContact"),document.getElementById("navFind"),
+                        document.getElementById("navPatco"), document.getElementById("navTell")];
+    const sections = [document.getElementById("tellItContent")];
+    for (let i=0; i<elements.length; i++) {
+        elements[i].classList.toggle("dark-mode-primary");
+    } for (let i=0; i<sections.length; i++) {
+        sections[i].classList.toggle("dark-mode-on-primary");
+    }
+  }
+
+  </script>    
 </body>
 </html>
