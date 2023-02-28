@@ -270,6 +270,10 @@ section.about {
 .about-column-right h2 {
     font-size: 1.8rem;
 }
+.about-links {
+    display: flex;
+    flex-direction: row;
+}
 .squiggle {
     background-color: #fcfdff;
 }
