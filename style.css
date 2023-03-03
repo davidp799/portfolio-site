@@ -86,15 +86,15 @@ nav a.active {
 .add-shadow {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px
 }
-
 /* Set layout for mobile navBar */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .nav-bar a {
         float: left;
         display: block;
+        margin-left: 25%;
     }
     /* Hide all links except "Home" */
-    .nav-bar nav.nav-left a:not(:first-child), nav.nav-middle a, nav.nav-right a {
+    .nav-bar nav.nav-left a:not(:first-child), nav.nav-right a {
         display: none;
     }
     /* Show Hamburger Menu */
@@ -102,9 +102,34 @@ nav a.active {
         float: right;
         display: block;
     }
+    /* Manage Sections and body */
+    section {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    /* stack about vertically */
+    .about-row {
+        flex-direction: column;
+    }
+    /* Stack buttons veritcally */
+    .about-links {
+        flex-direction: column;
+    }
+    .about-links button.default {
+        width: 100%;
+    }
+    /* Mobile display for Patco Section */
+    .patco-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .patco-links img {
+        width: 80%;
+    }
 }
 /* Display vertial menu on Hamburger Menu click */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .nav-bar.responsive {
         position: fixed;
     }
@@ -128,7 +153,7 @@ nav a.active {
     }
 }
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .nav-links li {
         position: relative;
     }
@@ -211,10 +236,10 @@ button.default {
     font-weight: bold;
     border: none;
     border-radius: 36px;
-    padding: 0 10%;
     margin-top: 20px;
     margin-right: 20px;
     transition: 300ms;
+    width: 33%;
 }
 button.default:hover {
     background-color: #c2e7ff;
@@ -237,6 +262,7 @@ section.about {
     display: flex;
     align-items: start;
     padding: 60px;
+    flex: 50%;
 }
 .about-image {
     height: auto;
@@ -256,6 +282,7 @@ section.about {
     color: #00210e;
     margin: auto;
     padding: 60px;
+    margin-top: 60px;
     flex: 50%;
     border-radius: 36px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -275,27 +302,6 @@ section.about {
 }
 .squiggle {
     background-color: #fcfdff;
-}
-@media only screen and (min-width: 600px)  
-{
-    section {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-    .about-column-left {
-        width: 30%;
-    }
-    .about-column-right {
-        margin-top: 60px;
-    }
-}
-@media all and (max-width:600px) {
-    .about-row
-    {
-        display: block; 
-        float: none; 
-        width: 100%;
-    }
 }
 
 /* Skills Section Styling */
@@ -442,11 +448,8 @@ section.patco-today {
 .patco-description h2 {
     font-weight: bold;
 }
-.patco-links {
-    margin-top: 2rem;
-}
 .patco-links img {
-    height: 12vh;
+    width: 45%;
 }
 .patco-row {
     display: flex;
@@ -618,6 +621,6 @@ section.tell-it-for-me {
 .dark-mode-primary:hover {
     color: #BC5856
 }
-.dark-mode-primary::before {
+.dark-mode-primary::before a {
     background-color: #BC5856;
 }
