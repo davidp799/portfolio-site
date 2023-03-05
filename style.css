@@ -111,6 +111,9 @@ nav a.active {
     .about-row {
         flex-direction: column;
     }
+    .about-column-left {
+        margin-top: 0;
+    }
     /* Stack buttons veritcally */
     .about-links {
         flex-direction: column;
