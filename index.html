@@ -34,7 +34,7 @@
     <!-- Floating Dark/Light Mode Button -->
     <div id="toggleDarkModeButton">
         <button class="toggleDarkMode" onclick="toggleDarkMode()">
-            <img src="images/icons/darkMode.svg">
+            <img src="images/icons/moon.svg" id="toggleDarkModeImage">
         </button>
     </div>
 
@@ -259,6 +259,12 @@
             }
         }
         function toggleDarkMode() {
+            var image = document.getElementById("toggleDarkModeImage");
+            if (image.getAttribute("src") === "images/icons/moon.svg") {
+                image.setAttribute("src", "images/icons/sun.svg");
+            } else {
+                image.setAttribute("src", "images/icons/moon.svg");
+            }
             const elements = [document.getElementById("navBar"), document.getElementById("about"), document.getElementById("skills"), 
                                 document.getElementById("contact"), document.getElementById("patco-today"), document.body, 
                                 document.getElementById("squiggle"), document.getElementById("footer"), document.getElementById("navBrand"), 

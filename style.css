@@ -192,6 +192,8 @@ nav a.active {
 .toggleDarkMode {
     -webkit-font-smoothing: antialiased;
     -mox-osx-font-smoothing: grayscale;
+    height: 4.5rem;
+    width: 4.5rem;
     background-color : #ffb8d2;
     padding: .5rem;
     border: none;
@@ -213,6 +215,7 @@ nav a.active {
     right: 20px;
     z-index: 1;
 }
+
 
 /* Main Content Styling */
 section {
