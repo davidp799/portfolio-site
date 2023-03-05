@@ -456,6 +456,8 @@ section.patco-today {
 }
 .patco-column-left {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40%;
     height: auto;
 }
