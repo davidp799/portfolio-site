@@ -493,7 +493,7 @@ section.patco-today {
     cursor: pointer;
 }
 .screenshot-column img {
-    border-radius: 8px;
+    border-radius: 36px;
     border-color: whitesmoke;
     height: 60vh;
     width: auto;
