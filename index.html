@@ -252,10 +252,23 @@
         function responsiveNav() {
             var x = document.getElementById("navBar");
             console.log("DOCUMENT = " + x.className)
-            if (x.className === "nav-bar") {
+            const defaults = ["nav-bar", "nav-bar dark-mode-primary", "nav-bar add-shadow", "nav-bar dark-mode-primary add-shadow",
+                                "nav-bar add-shadow dark-mode-primary"];
+            const responsives = ["nav-bar responsive", "nav-bar responsive dark-mode-primary", 
+                "nav-bar responsive add-shadow", "nav-bar dark-mode-primary add-shadow responsive", 
+                "nav-bar add-shadow dark-mode-primary responsive", "nav-bar add-shadow responsive", 
+                "nav-bar dark-mode-primary responsive", "nav-bar dark-mode-primary responsive add-shadow",
+                "nav-bar responsive add-shadow dark-mode-primary", "nav-bar add-shadow responsive dark-mode-primary"];
+            if (defaults.includes(x.className)) {
                 x.className += " responsive";
-            } else {
-                x.className = "nav-bar";
+            } else if (responsives.includes(x.className)) {
+                if (x.className === responsives[1] || x.className === responsives[3] || x.className === responsives[4]
+                    || x.className === responsives[6] || x.className === responsives[7] || x.className === responsives[8]
+                    || x.className === responsives[9]) {
+                        x.className = "nav-bar dark-mode-primary";
+                } else {
+                    x.className = "nav-bar";
+                }
             }
         }
         function toggleDarkMode() {

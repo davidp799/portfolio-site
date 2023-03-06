@@ -102,34 +102,6 @@ nav a.active {
         float: right;
         display: block;
     }
-    /* Manage Sections and body */
-    section {
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-    /* stack about vertically */
-    .about-row {
-        flex-direction: column;
-    }
-    .about-column-left {
-        margin-top: 0;
-    }
-    /* Stack buttons veritcally */
-    .about-links {
-        flex-direction: column;
-    }
-    .about-links button.default {
-        width: 100%;
-    }
-    /* Mobile display for Patco Section */
-    .patco-links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .patco-links img {
-        width: 80%;
-    }
 }
 /* Display vertial menu on Hamburger Menu click */
 @media screen and (max-width: 1000px) {
@@ -483,7 +455,7 @@ section.patco-today {
 .patco-column-right {
     width: 60%;
     height: auto;
-    margin: 2vw;
+    margin: 2rem;
 }
 .screenshot-row.is-fullscreen .carousel-cell {
     height: 100%;
@@ -602,6 +574,57 @@ section.tell-it-for-me {
 .tell-it-header {
     margin-top: 10vh;
 }
+
+/* Set mobile layout for sections */
+@media screen and (max-width: 1000px) {
+    /* Manage Sections and body */
+    section {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    /* stack about vertically */
+    .about-row {
+        flex-direction: column;
+    }
+    .about-column-left, .about-column-right {
+        margin-top: 0;
+    }
+    /* Stack buttons veritcally */
+    .about-links {
+        flex-direction: column;
+    }
+    .about-links button.default {
+        width: 100%;
+    }
+    /* Mobile display for Patco Section */
+    .patco-row {
+        flex-direction: column;
+    }
+    .patco-column-left, .patco-column-right {
+        width: 100%;
+    }
+    .patco-column-right {
+        margin: 0;
+        
+    }
+    .patco-title h1, .patco-title h2, .patco-links {
+        text-align: center;
+    }
+    .patco-logo {
+        margin-bottom: 0;
+    }
+    .patco-logo img {
+        width: 40vw;
+    }
+    .patco-links {
+        display: flex;
+        align-items: center;
+    }
+    .patco-links img {
+        width: 100%;
+    }
+}
+
 
 
 /* Dark Mode */
