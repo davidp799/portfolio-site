@@ -177,9 +177,13 @@ nav a.active {
 .toggleDarkMode img {
     width: 2.75rem;
     height: 2.75rem;
+    transform: ;
 }
 .toggleDarkMode:hover {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+.toggleDarkMode:active {
+    transform: translateY(4px);
 }
 #toggleDarkModeButton {
     position: fixed;
