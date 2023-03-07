@@ -600,6 +600,11 @@ section.tell-it-for-me {
     .about-links button.default {
         width: 100%;
     }
+    /* Skills mobile section */
+    .skills-item {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     /* Mobile display for Patco Section */
     .patco-row {
         flex-direction: column;
