@@ -101,6 +101,9 @@ nav a.active {
         float: right;
         display: block;
     }
+    .nav-bar a.hamburgerMenu {
+        margin-right: 8.5%;
+    }
 }
 /* Display vertial menu on Hamburger Menu click */
 @media screen and (max-width: 1000px) {
