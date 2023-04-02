@@ -18,7 +18,8 @@ html {
 
 /* NavBar Styles */
 header {
-    background-color: #fcfdff;
+    background-color: rgba(252, 253, 255, 0.85);
+    backdrop-filter: blur(12px);
     position: fixed;
     z-index: 1;
     display: flex;
@@ -639,15 +640,23 @@ section.tell-it-for-me {
 
 
 /* Dark Mode */
+.dark-mode-primary-nav {
+    background-color: rgba(31,31,31, 0.85);
+    backdrop-filter: blur(12px);
+}
 .dark-mode-primary {
-    background-color: #1f1f1f;
+    background-color: rgba(31,31,31, 0.85);
     color: #e3e3e3;
+}
+.dark-mode-primary a {
+    background-color: transparent;
 }
 .dark-mode-on-primary {
     background-color: #2d2f31;
     color: #e3e3e3;
 }
 .dark-mode-on-primary a {
+    background-color: transparent;
     color: #e3e3e3;
 }
 .dark-mode-on-primary svg {
