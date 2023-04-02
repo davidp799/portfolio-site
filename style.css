@@ -645,7 +645,7 @@ section.tell-it-for-me {
     backdrop-filter: blur(12px);
 }
 .dark-mode-primary {
-    background-color: rgba(31,31,31, 0.85);
+    background-color: rgb(31,31,31);
     color: #e3e3e3;
 }
 .dark-mode-primary a {
