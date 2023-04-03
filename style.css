@@ -170,7 +170,7 @@ nav a.active {
     -mox-osx-font-smoothing: grayscale;
     height: 4.5rem;
     width: 4.5rem;
-    background-color : #ffb8d2;
+    background-color : rgb(255, 184, 210);
     padding: .5rem;
     border: none;
     border-radius: 30%;
@@ -435,6 +435,9 @@ section.patco-today {
 }
 .patco-links img {
     width: 45%;
+}
+.patco-links a {
+    text-decoration: none;
 }
 .patco-row {
     display: flex;
