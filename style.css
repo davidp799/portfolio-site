@@ -208,11 +208,14 @@ nav a.active::before {
     right: 20px;
     z-index: 1;
 }
+body {
+    background-color: #fcfdff;
+
+}
 
 
 /* Main Content Styling */
 section {
-    background-color: #fcfdff;
     max-width: 100%;
     padding: 2vh;
     padding-left: 5vw;
@@ -503,7 +506,51 @@ section.patco-today {
     margin-left: 35px;
   
 }
-
+/* Neat Things Sections */
+.my-page-body {
+    background-color: #fcfdff;
+    background-image: url("images/pattern_85.png");
+}
+section.neat-things, .neat-things {
+    background-color: transparent;
+}
+section.neat-things h1, h2, h3, p, a {
+    padding-top: 0;
+    margin: 0;
+}
+.neat-things-content {
+    width: 70%;
+    background-color: rgb(243, 246, 252, 0.9);
+    backdrop-filter: blur(12px);
+    color: #00210e;
+    margin: auto;
+    padding: 3rem;
+    border-radius: 36px;
+    text-align: left;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease 0s;
+}
+.neat-things-content:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.neat-things-content h1 {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.neat-things-content h2 {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+.neat-things-content h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.neat-things-content p {
+    font-weight: normal;
+}
+#neat-things-0 {
+    padding-top: 6.5rem;
+}
 
 /* Footer Styling */
 footer {
@@ -668,7 +715,7 @@ section.tell-it-for-me {
     background-color: transparent;
 }
 .dark-mode-on-primary {
-    background-color: #2d2f31;
+    background-color: rgb(45, 47, 49, 0.9);
     color: #e3e3e3;
 }
 .dark-mode-on-primary a {
