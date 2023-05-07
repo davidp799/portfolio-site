@@ -2,7 +2,6 @@
 @font-face { font-family: reforma; src: url('fonts/reforma/Reforma2018/Reforma2018-Blanca.ttf'); } 
 * {
     font-family: 'Reforma', reforma;
-    font-size: 16px;
     margin: 0;
     padding: 0;
 }
@@ -219,17 +218,12 @@ body {
 section {
     max-width: 100%;
     padding: 2vh;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     overflow-x: hidden;
 }
-section h1, h2, h3, p, a {
-    padding-top: 1.5rem;
-    margin: 0;
-}
-
 p {
-    line-height: 1.5;
+    line-height: 2;
     margin: 0 0 20px 0;
 }
 button.default {
@@ -240,6 +234,7 @@ button.default {
     border: none;
     border-radius: 36px;
     margin-top: 20px;
+    margin-bottom: 20px;
     margin-right: 20px;
     transition: 300ms;
     width: 33%;
@@ -264,8 +259,9 @@ section.about {
 .about-column-left {
     display: flex;
     align-items: start;
-    padding: 60px;
-    flex: 50%;
+    padding-top: 60px;
+    padding-right: 60px;
+    flex: 40%;
 }
 .about-image {
     height: auto;
@@ -286,7 +282,7 @@ section.about {
     margin: auto;
     padding: 60px;
     margin-top: 60px;
-    flex: 50%;
+    flex: 60%;
     border-radius: 36px;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease 0s;
@@ -336,8 +332,8 @@ section.skills {
     justify-content: center;
 }
 .skills-item {
-    text-align: justify;
-    width: 4rem;
+    text-align: center;
+    width: 5rem;
     margin-left: 4rem;
     margin-right: 4rem;
     cursor: pointer;
@@ -451,7 +447,7 @@ section.patco-today {
     font-weight: bold;
 }
 .patco-links img {
-    width: 45%;
+    width: 30%;
 }
 .patco-links a {
     text-decoration: none;
@@ -461,16 +457,15 @@ section.patco-today {
 }
 .patco-column-left {
     display: flex;
-    align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 20%;
     height: auto;
 }
 .patco-logo {
     margin: 2rem;
 }
 .patco-logo img {
-    width: 20vw;
+    width: 12vw;
     object-fit: cover;
     border-radius: 36%;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
@@ -673,15 +668,14 @@ section.tell-it-for-me {
         margin-right: 1rem;
     }
     /* Mobile display for Patco Section */
-    .patco-row {
+    .patco-row, .patco-title {
         flex-direction: column;
     }
-    .patco-column-left, .patco-column-right {
+    .patco-column-left, .patco-column-right, .patco-about, .patco-links {
         width: 100%;
     }
     .patco-column-right {
         margin: 0;
-        
     }
     .patco-title h1, .patco-title h2, .patco-links {
         text-align: center;
