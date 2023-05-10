@@ -105,11 +105,12 @@ nav a.active::before {
     color: black;
 }
 .nav-left {
-    width: 70%;
+    width: auto;
     text-align: center;
+    margin-right: 25vw;
 }
 .nav-right {
-    width: 30%;
+    width: auto;
     text-align: center;
 }
 .hamburgerMenu {
@@ -137,9 +138,6 @@ nav a.active::before {
     .nav-bar a.icon {
         float: right;
         display: block;
-    }
-    .nav-bar a.hamburgerMenu {
-        margin-right: 8.5%;
     }
 }
 /* Display vertial menu on Hamburger Menu click */
