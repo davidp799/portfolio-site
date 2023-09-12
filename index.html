@@ -292,16 +292,20 @@
             const sections = [document.getElementById("aboutRight"), document.getElementById("skillsContent"),
                                 document.getElementById("patcoContent"), document.getElementById("contactContent")];
             const buttons = [document.getElementById("button1"), document.getElementById("button2"), document.getElementById("button3")];
-            for (let i=0; i<elements.length; i++) {
-                if (i === 0) {
-                    elements[i].classList.toggle("dark-mode-primary-nav");
-                } else {
-                    elements[i].classList.toggle("dark-mode-primary");
+            try {
+                for (let i=0; i<elements.length; i++) {
+                    if (i === 0) {
+                        elements[i].classList.toggle("dark-mode-primary-nav");
+                    } else {
+                        elements[i].classList.toggle("dark-mode-primary");
+                    }
+                } for (let i=0; i<sections.length; i++) {
+                    sections[i].classList.toggle("dark-mode-on-primary");
+                } for (let i=0; i<buttons.length; i++) {
+                    buttons[i].classList.toggle("dark-mode-secondary");
                 }
-            } for (let i=0; i<sections.length; i++) {
-                sections[i].classList.toggle("dark-mode-on-primary");
-            } for (let i=0; i<buttons.length; i++) {
-                buttons[i].classList.toggle("dark-mode-secondary");
+            } catch (e) {
+                console.error(e);
             }
         }
     </script>    
