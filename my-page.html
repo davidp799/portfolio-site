@@ -139,15 +139,18 @@
                                 document.getElementById("navPatco"), document.getElementById("navTell"), document.getElementById("navMenu")];
             const sections = [document.getElementById("neatThingsContent0"), document.getElementById("neatThingsContent1"), document.getElementById("neatThingsContent2")];
             for (let i=0; i<elements.length; i++) {
-                if (i === 0) {
-                    elements[i].classList.toggle("dark-mode-primary-nav");
-                } else {
-                    elements[i].classList.toggle("dark-mode-primary");
+                try {
+                    if (i === 0) {
+                        elements[i].classList.toggle("dark-mode-primary-nav");
+                    } else {
+                        elements[i].classList.toggle("dark-mode-primary");
+                    }
+                } catch (e) {
+                    console.error(e);
                 }
+                
             } for (let i=0; i<sections.length; i++) {
                 sections[i].classList.toggle("dark-mode-on-primary");
-            } for (let i=0; i<buttons.length; i++) {
-                buttons[i].classList.toggle("dark-mode-secondary");
             }
         }
     </script>    
