@@ -628,7 +628,7 @@ section.tell-it-for-me {
 }
 .dark-mode-on-primary a {
     background-color: var(--transparent);
-    color: var(--darkOnPrimary);
+    color: var(--darkText);
 }
 .dark-mode-on-primary svg {
     filter: invert(100%) sepia(4%) saturate(1850%) hue-rotate(280deg) brightness(112%) contrast(78%);
@@ -647,7 +647,3 @@ section.tell-it-for-me {
 .dark-mode-primary::before a {
     background-color: var(--redHover);
 }
-
-
-
-
