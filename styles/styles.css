@@ -546,6 +546,9 @@ section.tell-it-for-me {
     .nav-bar nav.nav-left a:not(:first-child), nav.nav-right {
         display: none;
     }
+    .nav-left {
+        width: 20vw;
+    }
     .nav-bar a {
         float: left;
         display: block;
