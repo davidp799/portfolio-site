@@ -1,9 +1,14 @@
 :root {
     --black: #000000;
-    --buttonDark: #e6e9ee;
-    --buttonDarkHover: #c2e7ff;
+    --buttonDark: #393b3d;
+    --buttonDarkHover: #004a77;
     --buttonLight: #e6e9ee;
     --buttonLightHover: #c2e7ff;
+    --darkOnPrimary: rgb(45, 47, 49);
+    --darkOnPrimaryTranslucent: rgb(45, 47, 49, 0.9);
+    --darkPrimary: rgb(31,31,31);
+    --darkText: #e3e3e3;
+    --darkPrimaryTranslucent: rgba(31,31,31, 0.85);
     --grayWhite: #f5f5f5;
     --grayLight: #cccccc;
     --grayLightHover: #b8b8b8;
@@ -15,6 +20,7 @@
     --redHover: #cc3340;
     --redActive: #a32933;
     --shadowLight: #3c40431a;
+    --transparent: transparent;
     --white: #ffffff;
     --whiteTranslucent: #ffffffd9;
 }
