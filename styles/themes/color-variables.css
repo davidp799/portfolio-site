@@ -1,0 +1,20 @@
+:root {
+    --black: #000000;
+    --buttonDark: #e6e9ee;
+    --buttonDarkHover: #c2e7ff;
+    --buttonLight: #e6e9ee;
+    --buttonLightHover: #c2e7ff;
+    --grayWhite: #f5f5f5;
+    --grayLight: #cccccc;
+    --grayLightHover: #b8b8b8;
+    --grayLightActive: #a3a3a3;
+    --offWhite: #fcfdff;
+    --offWhiteTranslucent: #fcfdffd9;
+    --pink: #ffb8d2;
+    --red: #e6192a;
+    --redHover: #cc3340;
+    --redActive: #a32933;
+    --shadowLight: #3c40431a;
+    --white: #ffffff;
+    --whiteTranslucent: #ffffffd9;
+}
