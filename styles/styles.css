@@ -50,7 +50,7 @@ html {
 
 /* NavBar Styles */
 header {
-    background-color: var(--whiteTranslucent);
+    background-color: var(--offWhiteTranslucent);
     backdrop-filter: blur(12px);
     position: fixed;
     z-index: 1;
