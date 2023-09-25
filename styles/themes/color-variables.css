@@ -4,6 +4,8 @@
     --buttonDarkHover: #004a77;
     --buttonLight: #e6e9ee;
     --buttonLightHover: #c2e7ff;
+    --contentDark: ;
+    --contentLight: #f3f6fc;
     --darkOnPrimary: rgb(45, 47, 49);
     --darkOnPrimaryTranslucent: rgb(45, 47, 49, 0.9);
     --darkPrimary: rgb(31,31,31);

@@ -198,25 +198,25 @@ section.about {
     width: 100%;
     object-fit: cover;
     border-radius: 28%;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .about-image img:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .about-column-right {
-    background-color: #f3f6fc;
+    background-color: var(--contentLight);
     color: #00210e;
     margin: auto;
     padding: 60px;
     margin-top: 60px;
     flex: 60%;
     border-radius: 36px;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .about-column-right:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .about-links {
     display: flex;
@@ -230,7 +230,7 @@ section.skills {
     min-height: 10vh;
 }
 .skills-content {
-    background-color: #f3f6fc;
+    background-color: var(--contentLight);
     color: #00210e;
     min-height: 40vh;
     height: auto;
@@ -238,14 +238,11 @@ section.skills {
     padding: 60px;
     border-radius: 36px;
     text-align: center;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .skills-content:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.skills-content h1 {
-    font-size: 2.2rem;
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .skills-section {
     display: flex;
@@ -272,7 +269,7 @@ section.contact {
     min-height: 10vh;
 }
 .contact-content {
-    background-color: #f3f6fc;
+    background-color: var(--contentLight);
     color: #00210e;
     min-height: 40vh;
     height: auto;
@@ -280,16 +277,11 @@ section.contact {
     padding: 60px;
     border-radius: 36px;
     text-align: center;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .contact-content:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-.contact-content h1 {
-    font-weight: bolder;
-    font-size: 4rem;
-    line-height: 15vh;
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .contact-links {
     display: flex;
@@ -334,17 +326,17 @@ section.patco-today {
     min-height: 80vh;
 }
 .patco-today-content {
-    background-color: #f3f6fc;
+    background-color: var(--contentLight);
     color: #00210e;
     margin: auto;
     padding: 3rem;
     border-radius: 36px;
     text-align: left;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .patco-today-content:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .patco-today-content h1 {
     font-weight: bolder;
@@ -383,11 +375,11 @@ section.patco-today {
     width: 12vw;
     object-fit: cover;
     border-radius: 36%;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .patco-logo img:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .patco-column-right {
     width: 60%;
@@ -406,7 +398,7 @@ section.patco-today {
     border-color: whitesmoke;
     height: 60vh;
     width: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .screenshot-column img:hover {
@@ -438,11 +430,11 @@ section.neat-things h1, h2, h3, p, a {
     padding: 3rem;
     border-radius: 36px;
     text-align: left;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .neat-things-content:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 #neat-things-0 {
     padding-top: 6.5rem;
@@ -463,7 +455,7 @@ section.find-it-rentals {
     min-height: 10vh;
 }
 .find-it-rentals-content {
-    background-color: #f3f6fc;
+    background-color: var(--contentLight);
     color: #00210e;
     min-height: 40vh;
     height: auto;
@@ -471,11 +463,11 @@ section.find-it-rentals {
     padding: 60px;
     border-radius: 36px;
     text-align: center;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .find-it-rentals-content:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .find-it-rentals-row {
     display: flex;
@@ -509,7 +501,7 @@ section.tell-it-for-me {
     padding-top: 6rem;
 }
 .tell-it-for-me-content {
-    background-color: #f3f6fc;
+    background-color: var(--contentLight);
     color: #00210e;
     min-height: 10vh;
     height: auto;
@@ -518,11 +510,11 @@ section.tell-it-for-me {
     padding: 5%;
     border-radius: 36px;
     text-align: center;
-    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 0px var(--shadowLight);
     transition: all 0.2s ease 0s;
 }
 .tell-it-for-me-content:hover {
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--shadowLight);
 }
 .tell-it-row {
     display: flex;
