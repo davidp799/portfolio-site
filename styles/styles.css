@@ -1,6 +1,6 @@
 @import 'themes/color-variables.css';
 /* Master Styles */
-@font-face { font-family: reforma; src: url('../fonts/Reforma2018-Blanca.ttf'); } 
+@font-face { font-family: reforma; src: url('fonts/Reforma2018-Blanca.ttf'); } 
 * {
     font-family: 'Reforma', reforma;
     margin: 0;
