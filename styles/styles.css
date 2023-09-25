@@ -233,7 +233,6 @@ section.skills {
 .skills-content {
     background-color: var(--contentLight);
     color: #00210e;
-    min-height: 40vh;
     height: auto;
     margin: auto;
     padding: 60px;
@@ -254,8 +253,7 @@ section.skills {
 .skills-item {
     text-align: center;
     width: 5rem;
-    margin-left: 4rem;
-    margin-right: 4rem;
+    margin: 1.5rem 3rem 1.5rem 3rem;
     cursor: pointer;
 }
 .skills-item img {
@@ -272,7 +270,6 @@ section.contact {
 .contact-content {
     background-color: var(--contentLight);
     color: #00210e;
-    min-height: 40vh;
     height: auto;
     margin: auto;
     padding: 60px;
@@ -446,7 +443,6 @@ section.find-it-rentals {
 .find-it-rentals-content {
     background-color: var(--contentLight);
     color: #00210e;
-    min-height: 40vh;
     height: auto;
     margin: auto;
     padding: 60px;
@@ -560,8 +556,8 @@ section.tell-it-for-me {
     }
     /* Skills mobile section */
     .skills-item {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 0px 1rem 0px 1rem;
+        padding: 2vw;
     }
     /* Mobile display for Patco Section */
     .patco-row, .patco-title {
