@@ -25,7 +25,7 @@
             <nav class="nav-left" id="navBox">
                 <a class="active" id="navHome" href="#about">Home</a>
                 <a class="nav-link" id="navContact" href="#about">Contact</a>
-                <a class="nav-link" id="navAWSChat" href="https://github.com/davidp799/aws-encrypted-chat">ChatNow</a>
+                <a class="nav-link" id="navChatNow" href="https://github.com/davidp799/aws-encrypted-chat">ChatNow</a>
                 <a class="nav-link" id="navPatco" href="#patco-today">Patco Today</a>
             </nav>
             <!-- Right (branding) -->
@@ -239,75 +239,50 @@
     <footer id="footer">
         <p>Made with ❤️ in Philadelphia by David Pape</p>
     </footer>
-    
+
     <script src="https://unpkg.com/flickity@2.1.2/dist/flickity.pkgd.js"></script>
-    
-    <!-- add shadow and shrink top navigation on scroll -->
+      
     <script>
-        window.addEventListener('scroll',(e)=>{
-            // add shadow on scroll
+        window.addEventListener('scroll', (e) => {
             const nav = document.querySelector('.nav-bar');
-            if(window.pageYOffset>0){
-                nav.classList.add("add-shadow");
-            }else{
-                nav.classList.remove("add-shadow");
-            }
+            window.pageYOffset > 0 ? nav.classList.add('add-shadow') : nav.classList.remove('add-shadow');
         });
-    </script>
-  
-    <script>
+
         function responsiveNav() {
-            var x = document.getElementById("navBar");
-            const defaults = ["nav-bar", "nav-bar dark-mode-primary-nav", "nav-bar add-shadow", "nav-bar dark-mode-primary-nav add-shadow",
-                                "nav-bar add-shadow dark-mode-primary-nav"];
-            const responsives = ["nav-bar responsive", "nav-bar responsive dark-mode-primary-nav", 
-                "nav-bar responsive add-shadow", "nav-bar dark-mode-primary-nav add-shadow responsive", 
-                "nav-bar add-shadow dark-mode-primary-nav responsive", "nav-bar add-shadow responsive", 
-                "nav-bar dark-mode-primary-nav responsive", "nav-bar dark-mode-primary-nav responsive add-shadow",
-                "nav-bar responsive add-shadow dark-mode-primary-nav", "nav-bar add-shadow responsive dark-mode-primary-nav"];
-            if (defaults.includes(x.className)) {
-                x.className += " responsive";
-            } else if (responsives.includes(x.className)) {
-                if (x.className === responsives[1] || x.className === responsives[3] || x.className === responsives[4]
-                    || x.className === responsives[6] || x.className === responsives[7] || x.className === responsives[8]
-                    || x.className === responsives[9]) {
-                        x.className = "nav-bar dark-mode-primary-nav";
-                } else {
-                    x.className = "nav-bar";
-                }
+            try {
+                document.getElementById('navBar').classList.toggle('responsive');
+            } catch(e) {
+                console.error(e);
             }
         }
+        
         function toggleDarkMode() {
-            var image = document.getElementById("toggleDarkModeImage");
-            if (image.getAttribute("src") === "images/icons/moon.svg") {
-                image.setAttribute("src", "images/icons/sun.svg");
-            } else {
-                image.setAttribute("src", "images/icons/moon.svg");
-            }
-            const elements = [document.getElementById("navBar"), document.getElementById("about"), document.getElementById("skills"), 
-                                document.getElementById("contact"), document.getElementById("patco-today"), document.body, 
-                                document.getElementById("squiggle"), document.getElementById("footer"), document.getElementById("navBrand"), 
-                                document.getElementById("navHome"), document.getElementById("navContact"),document.getElementById("navAWSChat"),
-                                document.getElementById("navPatco"), document.getElementById("navMenu")];
-            const sections = [document.getElementById("aboutRight"), document.getElementById("skillsContent"),
-                                document.getElementById("patcoContent"), document.getElementById("contactContent")];
-            const buttons = [document.getElementById("button1"), document.getElementById("button2"), document.getElementById("button3")];
             try {
-                for (let i=0; i<elements.length; i++) {
-                    if (i === 0) {
-                        elements[i].classList.toggle("dark-mode-primary-nav");
-                    } else {
-                        elements[i].classList.toggle("dark-mode-primary");
-                    }
-                } for (let i=0; i<sections.length; i++) {
-                    sections[i].classList.toggle("dark-mode-on-primary");
-                } for (let i=0; i<buttons.length; i++) {
-                    buttons[i].classList.toggle("dark-mode-secondary");
+                var currentIcon = document.getElementById('toggleDarkModeImage');
+                currentIcon.getAttribute('src').includes('moon.svg')
+                    ? currentIcon.setAttribute('src', 'images/icons/sun.svg')
+                    : currentIcon.setAttribute('src', 'images/icons/moon.svg');
+                const elementIds = [
+                    "navBar", "about", "skills", "contact", "patco-today", "squiggle", "footer",
+                    "navBrand", "navHome", "navContact","navChatNow", "navPatco", "navMenu"
+                ];
+                const sectionIds = ["aboutRight", "skillsContent", "patcoContent", "contactContent"];
+                const buttonIds = ["button1", "button2", "button3"];
+                document.body.classList.toggle("dark-mode-primary");
+                for (let i=0; i<elementIds.length; i++) {
+                    elementIds[i].includes('navBar')
+                        ? document.getElementById(elementIds[i]).classList.toggle("dark-mode-primary-nav")
+                        : document.getElementById(elementIds[i]).classList.toggle("dark-mode-primary");
+                } for (let i=0; i<sectionIds.length; i++) {
+                    document.getElementById(sectionIds[i]).classList.toggle("dark-mode-on-primary");
+                } for (let i=0; i<buttonIds.length; i++) {
+                    document.getElementById(buttonIds[i]).classList.toggle("dark-mode-secondary");
                 }
             } catch (e) {
                 console.error(e);
             }
         }
-    </script>    
+
+    </script>
 </body>
 </html>
