@@ -118,7 +118,7 @@ nav a.active::before, a:hover::before {
     box-shadow: var(--shadowLight) 0px 1px 2px 0px
 }
 /* Dark Mode Toggle Styling */
-.toggleDarkMode {
+.toggleDarkModeButton {
     -webkit-font-smoothing: antialiased;
     -mox-osx-font-smoothing: grayscale;
     height: 4.5rem;
@@ -131,17 +131,17 @@ nav a.active::before, a:hover::before {
     transition: all 0.2s ease 0s;
     cursor: pointer;
 }
-.toggleDarkMode img {
+.toggleDarkModeButton img {
     width: 2.75rem;
     height: 2.75rem;
 }
-.toggleDarkMode:hover {
+.toggleDarkModeButton:hover {
     box-shadow: 0px 6px 12px var(--shadowLight);
 }
-.toggleDarkMode:active {
+.toggleDarkModeButton:active {
     transform: translateY(4px);
 }
-#toggleDarkModeButton {
+#toggleDarkModeContainer {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -435,90 +435,6 @@ footer {
     text-align: center;
 }
 
-/* Find It Rentals Styling */
-section.find-it-rentals {
-    padding-top: 6rem;
-    min-height: 10vh;
-}
-.find-it-rentals-content {
-    background-color: var(--contentLight);
-    color: #00210e;
-    height: auto;
-    margin: auto;
-    padding: 60px;
-    border-radius: 36px;
-    text-align: center;
-    box-shadow: 0px 0px 0px var(--shadowLight);
-    transition: all 0.2s ease 0s;
-}
-.find-it-rentals-content:hover {
-    box-shadow: 0px 4px 8px var(--shadowLight);
-}
-.find-it-rentals-row {
-    display: flex;
-    flex-direction: column;
-    min-height: 50vh;
-    align-items: center;
-    text-align: center;
-}
-.find-it-rentals-row h1 {
-    font-size: 2.5rem;
-}
-.find-it-rentals-row p {
-    font-size: 1.5rem;
-}
-.find-it-rentals-header {
-    margin-top: 10vh;
-}
-
-.no-squircle .squircle {
-    opacity: 0;
-}
-
-.no-squircle .icon {
-    background-color: var(--bg);
-    border-radius: 16px;
-}
-
-/* Tell It For Me Styling */
-section.tell-it-for-me {
-    padding: 1rem;
-    padding-top: 6rem;
-}
-.tell-it-for-me-content {
-    background-color: var(--contentLight);
-    color: #00210e;
-    min-height: 10vh;
-    height: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 5%;
-    border-radius: 36px;
-    text-align: center;
-    box-shadow: 0px 0px 0px var(--shadowLight);
-    transition: all 0.2s ease 0s;
-}
-.tell-it-for-me-content:hover {
-    box-shadow: 0px 4px 8px var(--shadowLight);
-}
-.tell-it-row {
-    display: flex;
-    flex-direction: column;
-    min-height: 50vh;
-    align-items: center;
-    text-align: center;
-}
-.tell-it-row h1 {
-    font-size: 2.5rem;
-}
-.tell-it-row p {
-    font-size: 1.5rem;
-}
-.tell-it-header {
-    margin-top: 10vh;
-}
-
-/* Set mobile device layout */
 @media screen and (max-width: 1000px) {
     .nav-bar nav.nav-left a:not(:first-child), nav.nav-right {
         display: none;
