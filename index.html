@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 <head>
-    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.1.2/dist/flickity.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" > 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-3RMNWQYNS4"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -9,59 +14,43 @@
         gtag('js', new Date());
         gtag('config', 'G-3RMNWQYNS4');
     </script>
-    <!-- Rest of Head Element -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2.1.2/dist/flickity.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" > 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>David Pape | Software Engineer & Freelance Developer</title>
 </head>
 
 <body>
     <header class="nav-bar" id="navBar">
-        <!-- Left (home/contact) -->
-            <nav class="nav-left" id="navBox">
-                <a class="active" id="navHome" href="#about">Home</a>
-                <a class="nav-link" id="navContact" href="#about">Contact</a>
-                <a class="nav-link" id="navChatNow" href="https://github.com/davidp799/aws-encrypted-chat">ChatNow</a>
-                <a class="nav-link" id="navPatco" href="#patco-today">Patco Today</a>
-            </nav>
-            <!-- Right (branding) -->
-            <nav class="nav-right" id="navBox">
-                <a class="brand" id="navBrand" href="my-page.html">DAVID PAPE JR</a>
-            </nav>
-
-        <!-- Hamburger Menu (responsive) -->
+        <nav class="nav-left">
+            <a class="active" id="navHome" href="#about">Home</a>
+            <a class="nav-link" id="navContact" href="#about">Contact</a>
+            <a class="nav-link" id="navChatNow" href="https://github.com/davidp799/aws-encrypted-chat">ChatNow</a>
+            <a class="nav-link" id="navPatco" href="#patco-today">Patco Today</a>
+        </nav>
+        <nav class="nav-right">
+            <a class="brand" id="navBrand" href="my-page.html">DAVID PAPE JR</a>
+        </nav>
         <a href="javascript:void(0);" class="hamburgerMenu" id="nav-menu" onclick="responsiveNav()">
             <i class="fa fa-bars" id="navMenu"></i>
         </a>
     </header>
-
-    <!-- Floating Dark/Light Mode Button -->
-    <div id="toggleDarkModeButton">
-        <button class="toggleDarkMode" onclick="toggleDarkMode()">
-            <img src="images/icons/moon.svg" id="toggleDarkModeImage">
+    <div id="toggleDarkModeContainer">
+        <button class="toggleDarkModeButton" onclick="toggleDarkMode()">
+            <img src="images/icons/moon.svg" id="toggleDarkModeImg">
         </button>
     </div>
-
     <section class="about" id="about">
         <div class="about-row">
-          <div class="about-column-left">
-            <div class="about-image">
-              <img src="images/profile.jpg">
+            <div class="about-column-left">
+                <div class="about-image">
+                    <img src="images/profile.jpg">
+                </div>
             </div>
-          </div>
-          
-          <div class="about-column-right" id="aboutRight">
-            <div class="about-header">
+            <div class="about-column-right" id="aboutRight">
                 <h1>David Pape</h1>
                 <h2>Software Engineer and Freelance Developer</h2>
                 <p>Rutgers University 2023</p> 
                 <p>B.S. Degree in Computer Science</p>
                 <div class="about-links">
-                    <button class="default" id="button1" onclick="window.location.href='https://github.com/davidp799'">
+                    <button class="default" id="button1" onclick="window.location.href='https://www.github.com/davidp799'">
                         <a>GitHub</a>
                     </button>
                     <button class="default" id="button2" onclick="window.location.href='https://www.linkedin.com/in/david-pape-jr/'">
@@ -70,17 +59,12 @@
                     <button class="default" id="button3" onclick="window.location.href='./resources/David.Pape.Resume.pdf'">
                         <a>Resume</a>
                     </button>
-
                 </div>
+                <h2>Hi there!</h2>
+                <p>I am a <b>software engineer</b> at Savvas Learning and a <b>freelance developer</b> from the Philadelphia area. I have a passion for technology related to the urban environment, public infrastructure, and our communities.</p>
+                <p>I like to spend my free time practicing music, working on DIY projects, tinkering with electronics, and of course, spending time with my partner and two cats.</p> 
             </div>
-            <div class="about-body">
-              <h2>Hi there!</h2>
-              <p>I am a <b>software engineer</b> at Savvas Learning and a <b>freelance developer</b> from the Philadelphia area. I have a passion for technology related to the urban environment, public infrastructure, and our communities.</p>
-              <p>I like to spend my free time practicing music, working on DIY projects, tinkering with electronics, and of course, spending time with my partner and two cats.</p> 
-            </div>
-          </div>
         </div>
-    
     </section>
 
     <section class="skills" id="skills">
@@ -177,13 +161,11 @@
                         </div>
                         <h3>About</h3>
                         <p>Patco Today is a free, open-source transit app for Android. Primarily utilizing the Google Transit Feed Specification (GTFS) API, it provides the most up-to-date scheduling information for PATCO Transit.</p>    
-        
                     </div>
                 </div>
             </div>
 
             <div class="patco-screenshots">        
-                <!-- Flickity HTML init -->
                 <div class="screenshot-row js-flickity"
                     data-flickity='{ "fullscreen": true, "autoPlay": true, "wrapAround": true}'>
                     <div class="screenshot-column">
@@ -220,7 +202,6 @@
                 </ul>
                 <h2>What's New</h2>
                 <p>[5/1/2023] - Patco Today now automatically downloads and displays upcoming special schedules for every trip.</p>    
-
             </div>
         </div>
     </section>
@@ -258,7 +239,7 @@
         
         function toggleDarkMode() {
             try {
-                var currentIcon = document.getElementById('toggleDarkModeImage');
+                var currentIcon = document.getElementById('toggleDarkModeImg');
                 currentIcon.getAttribute('src').includes('moon.svg')
                     ? currentIcon.setAttribute('src', 'images/icons/sun.svg')
                     : currentIcon.setAttribute('src', 'images/icons/moon.svg');
