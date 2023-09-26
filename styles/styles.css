@@ -163,7 +163,6 @@ p {
 button.default {
     background-color: var(--buttonLight);
     height: 4rem;
-    font-size: 1.5rem;
     font-weight: bold;
     border: none;
     border-radius: 36px;
@@ -555,7 +554,10 @@ section.tell-it-for-me {
     .about-links button.default {
         width: 100%;
     }
-    /* Skills mobile section */
+    button.default {
+        margin: 10px 20px 10px 0px;
+    }
+        /* Skills mobile section */
     .skills-item {
         margin: 0px 1rem 0px 1rem;
         padding: 2vw;
